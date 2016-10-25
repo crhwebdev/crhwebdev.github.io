@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400; 
+    color: #747704;    
+}
+
+/* to ensure these elements do not overflow their containers */
+img, embed, object, video {
+    max-width: 100%;
+}
+
+
+.big-text {
+    font-size: 4em;        
+}
+
+.small-text{
+    font-size: 1.6em;    
+}
+
+.medium-text {
+    font-size: 3em;
+}
+
+.thin-text {
+    font-weight: 100;
+}
+
+.light-text {
+    color: #bcbbbb;
+}
+
+.bar {    
+    background-color: #bcbbbb;
+    height: 3px;
+    margin-top: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.project-link {
+    text-decoration: none;
+    font-weight: 300;
+    color: #747704
+}
+
+.project-link:hover {
+    text-decoration: none;
+    font-weight: 300;
+    color: purple;
+}
+
+.header-align {
+    margin-top: -0.25em;
+}
+
+.name {
+    margin-top: -0.5em;
+}
+
+.logo {
+    margin-top: 1.0em;
+}
+
+.feature {
+   margin-bottom: 1.0em; 
+}
+
+
+
+
