@@ -1,7 +1,7 @@
 body {
-    font-family: 'Lato', sans-serif; 
-    font-weight: 400; 
-    color: #747704;    
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #747704;
 }
 
 /* to ensure these elements do not overflow their containers */
@@ -11,11 +11,11 @@ img, embed, object, video {
 
 
 .big-text {
-    font-size: 4em;        
+    font-size: 4em;
 }
 
 .small-text{
-    font-size: 1.6em;    
+    font-size: 1.6em;
 }
 
 .medium-text {
@@ -30,7 +30,7 @@ img, embed, object, video {
     color: #bcbbbb;
 }
 
-.bar {    
+.bar {
     background-color: #bcbbbb;
     height: 3px;
     margin-top: 0.75em;
@@ -62,9 +62,15 @@ img, embed, object, video {
 }
 
 .feature {
-   margin-bottom: 1.0em; 
+   margin-bottom: 1.0em;
 }
 
 
+#featured div > .img-responsive:hover{
+  cursor: pointer;
+}
 
-
+li.project{
+  font-size: 1.5rem;
+  line-height: 2.0;
+}

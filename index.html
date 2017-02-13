@@ -6,22 +6,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1" <!-- sets dip to hardware pixels of current device -->
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Bootstrap Portfolio</title>
+        <title>Portfolio</title>
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
-            <div class="row" id="header">
+            <header class="row" id="header">
                 <div class="col-md-6"><img class="logo" src="./images/udacity-logo.jpg"></div>
                 <div class="col-md-6 text-right text-uppercase name">
                     <h1 class="big-text thin-text">Carl Hain</h1>
                     <h3 class="small-text header-align">Front-end Ninja</h3>
                 </div>
-            </div>
+            </header>
 
             <div class="row bar" id="divider"></div>
 
@@ -30,40 +30,57 @@
                     <img src="./bootstrap-prestructure_files/1140x350" class="img-responsive">
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="light-text">Featured Work</h2>
+                    <h2 class="light-text">Featured Work on Codepen</h2>
                 </div>
             </div>
-            <div class="row text-center" id="projects">
+            <div class="row text-center" id="featured">
                 <div class="col-md-4">
-                    <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#Portfolio">
-                    <h3 class="medium-text text-uppercase">Portfolio</h3>
-                    <p><a class="project-link" href="https://github.com/udacity/Appify">https://github.com/udacity/Appify</a></p>
+                    <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#pomodoro">
+                    <h3 class="medium-text text-uppercase">Pomodoro</h3>
+                    <p><a class="project-link" href="http://s.codepen.io/crhain/debug/gwOmow" target="_blank">http://s.codepen.io/crhain/debug/gwOmow</a></p>
                 </div>
                 <div class="col-md-4">
-                    <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#Resume">
-                    <h3 class="medium-text text-uppercase">Resume</h3>
-                    <p><a class="project-link" href="https://github.com/udacity/Sunflower/">https://github.com/udacity/Sunflower/</a></p>
+                    <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#quote">
+                    <h3 class="medium-text text-uppercase">Quote</h3>
+                    <p><a class="project-link" href="http://s.codepen.io/crhain/debug/Bzvppr" target="_blank">http://s.codepen.io/crhain/debug/Bzvppr</a></p>
                 </div>
                 <div class="col-md-4">
-                    <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#Arcade">
-                    <h3 class="medium-text text-uppercase">Arcade</h3>
-                    <p><a class="project-link" href="https://github.com/udacity/Bokeh/">https://github.com/udacity/Bokeh/</a></p>
+                    <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#calculator">
+                    <h3 class="medium-text text-uppercase">Calculator</h3>
+                    <p><a class="project-link" href="http://s.codepen.io/crhain/debug/rrBYGw/YvAgOaVynLpA" target="_blank">http://s.codepen.io/crhain/debug/rrBYGw/YvAgOaVynLpA</a></p>
+                </div>
+            </div> <!--end of projects row -->
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="light-text">Other Projects</h2>
                 </div>
             </div>
+
+            <ul class="row" id="projects">
+              <li class="col-md-12 project"><a href="https://github.com/crhain/frogger" target="_blank">Frogger</a> - A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</li>
+              <li class="col-md-12 project"><a href="https://github.com/crhain/recipeBox" target="_blank">Recipie Box</a> - A useful app for storing recipies made with React.js, Redux, and Webpack.</li>
+            </ul> <!-- end of projects div>
+
+            <footer>
+              Carl Hain
+            </footer>
+
         </div>
 
-        <!-- Modal - Portfolio -->
-        <div class="modal fade" id="Portfolio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!-- Modal - Pomodoro -->
+        <div class="modal fade" id="pomodoro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLabel">Portfolio</h4>
+                <h4 class="modal-title text-center" id="myModalLabel">Pomodoro clock</h4>
               </div>
               <div class="modal-body">
                 <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
-                <p class="text-center">This was my first project in this class. I learned a lot about HTML and CSS.</p>
+                <p class="text-center">This is a simple pomodoro clock written in HTML/SCSS, JavaScript, and jQuery. See the source code <a href="http://codepen.io/crhain/pen/gwOmow" target="_blank">here</a></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -73,16 +90,16 @@
         </div>
 
 
- <!-- Modal - Resume -->
-        <div class="modal fade" id="Resume" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <!-- Modal - Quote -->
+        <div class="modal fade" id="quote" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLabel">Resume</h4>
+                <h4 class="modal-title text-center" id="myModalLabel">Random Quote Generator</h4>
               </div>
               <div class="modal-body">
                 <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
-                <p class="text-center">This was my first project using javascript.</p>
+                <p class="text-center">This project uses HTML/CSS, JavaScript, jQuery, and AJAX calls. See the source code <a href="http://codepen.io/crhain/pen/Bzvppr" target="_blank">here</a></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -92,16 +109,16 @@
         </div>
 
 
-<!-- Modal - Arcade -->
-        <div class="modal fade" id="Arcade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal - Calculator -->
+        <div class="modal fade" id="calculator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLabel">Classic Arcade Game</h4>
+                <h4 class="modal-title text-center" id="myModalLabel">Calculator</h4>
               </div>
               <div class="modal-body">
                 <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
-                <p class="text-center">I built this classic game using HTML5 Canvas and Javascript.</p>
+                <p class="text-center">I built this calculator using Javascript, jQuery, and HTML/CSS. See the source code <a href="http://codepen.io/crhain/pen/rrBYGw" target="_blank">here</a></p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
