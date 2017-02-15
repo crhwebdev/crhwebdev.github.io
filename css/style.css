@@ -9,6 +9,58 @@ img, embed, object, video {
     max-width: 100%;
 }
 
+#portfolio{
+
+}
+
+#about{
+
+}
+
+#contact{
+
+}
+
+.noshow{
+  display: none;
+}
+
+.header-align {
+    margin-top: -0.25em;
+}
+
+.name {
+    margin-top: -0.5em;
+}
+
+.logo {
+    margin-top: 1.0em;
+}
+
+.feature {
+   margin-bottom: 1.0em;
+}
+
+
+#featured div > .img-responsive:hover{
+  cursor: pointer;
+}
+
+li.project{
+  font-size: 1.5rem;
+  line-height: 2.0;
+}
+
+footer{
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+footer p{
+  border: 1px solid red;
+  margin: 0 30%;
+  text-align: center;
+}
 
 .big-text {
     font-size: 4em;
@@ -47,30 +99,4 @@ img, embed, object, video {
     text-decoration: none;
     font-weight: 300;
     color: purple;
-}
-
-.header-align {
-    margin-top: -0.25em;
-}
-
-.name {
-    margin-top: -0.5em;
-}
-
-.logo {
-    margin-top: 1.0em;
-}
-
-.feature {
-   margin-bottom: 1.0em;
-}
-
-
-#featured div > .img-responsive:hover{
-  cursor: pointer;
-}
-
-li.project{
-  font-size: 1.5rem;
-  line-height: 2.0;
 }
