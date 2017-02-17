@@ -17,8 +17,39 @@ img, embed, object, video {
 
 }
 
-#contact{
+#contact {
+  position: relative;
+  font-size: 2rem;
+}
 
+#contact form label{
+  opacity: 0;
+  z-index: -1;
+}
+
+#contact form input{
+  display: block;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#contact form textarea{
+  display: block;
+  width: 50%;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+#contact form button{
+  width: 20%;
+  background-color: #CEDAE2;
+}
+
+#contact form button:hover{
+  background-color: #B8CBDA;
 }
 
 .noshow{
