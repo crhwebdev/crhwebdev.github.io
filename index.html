@@ -13,6 +13,7 @@
         <script src="https://use.fontawesome.com/514b48d814.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/portfolioUI.js"></script>
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script type="text/javascript">
            (function(){
@@ -38,6 +39,14 @@
             </header>
 
             <div class="row bar" id="divider"></div>
+
+            <div id="nav-bar" class="nav">
+              <ul>
+                <li><a id="btn-portfolio" class="nav-btn active" href="#">Projects</a></li>
+                <li><a id="btn-about" class="nav-btn" href="#">About</a></li>
+                <li><a id="btn-contact" class="nav-btn" href="#">Contact</a></li>
+              </ul>
+            </div>
 
 
             <!--Portfolio Section -->
@@ -81,7 +90,7 @@
                   <li class="col-md-12 project"><a href="https://crhain.github.io/frogger/" target="_blank">Frogger</a><a href="https://github.com/crhain/frogger" target="_blank"> (source)</a> - A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</li>
                   <li class="col-md-12 project"><a href="https://github.com/crhain/recipeBox" target="_blank">Recipie Box</a> - A useful app for storing recipies made with React.js, Redux, and Webpack.</li>
                 </ul>
-              </div> <!-- end of projects div -->  
+              </div> <!-- end of projects div -->
 
             </div> <!--end of portfolio section -->
 
@@ -191,34 +200,6 @@
               $('#about').toggleClass('noshow');
               $('#portfolio').toggleClass('noshow');
             });
-
-
-
-            $('#contact-submit').on('click', function(e){
-              var fromEmail = "",
-                  fromName = "",
-                  messageHTML = "";
-              var validate = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
-
-              fromEmail = $('#contact-email').val().replace(validate, "");
-              fromName = $('#contact-name').val().replace(validate, "");;
-              messageHTML = $('#contact-message').val().replace(validate, "");;
-              messageHTML += "<br> Phone: " + $('#contact-phone').val();
-
-
-
-              if(!fromEmail || !fromName || !messageHTML){
-                alert('please fill out all sections!');
-              }
-              else{
-                console.log('sending email from ' + fromName + ' at ' + fromEmail + " : " + messageHTML);
-                // parameters: service_id, template_id, template_parameters - function to send emails on form submit
-                emailjs.send("default_service", "template_pDJFeKtF", {"from_email":fromEmail,"from_name": fromName,"message_html": messageHTML});
-                $('#contact-form>input, #contact-form>textarea').val('');
-              }
-              e.preventDefault();
-            });
-
 
           });
         </script>

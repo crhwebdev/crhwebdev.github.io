@@ -9,9 +9,51 @@ img, embed, object, video {
     max-width: 100%;
 }
 
-#portfolio{
-
+#nav-bar{
+  position: relative;
+  z-index: 10;
+  width: 60%;
+  margin: 0 auto;
 }
+/*fixed class to keep nav bar on top when scrolling*/
+#nav-bar.fixed{
+  position: fixed;
+}
+
+.nav-btn{
+  display: inline-block;
+  width: 200px;
+  line-height: 2.0;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+  background-color: gray;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.nav-btn:hover{
+  text-decoration: none;
+  color: white;
+  background-color: black;
+}
+
+.nav-btn:visited, .nav-btn:link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-btn:active{
+  box-shadow: 1px 1px 1px black;
+}
+
+
+.nav-btn.active{
+  background-color: black;
+  box-shadow: 1px 1px 1px black;
+}
+
 
 #featured div > .img-responsive:hover{
   cursor: pointer;
@@ -29,10 +71,6 @@ img, embed, object, video {
 #projects li{
   font-size: 1.5rem;
   line-height: 2.0;
-}
-
-#about{
-
 }
 
 #contact {
