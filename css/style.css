@@ -13,6 +13,24 @@ img, embed, object, video {
 
 }
 
+#featured div > .img-responsive:hover{
+  cursor: pointer;
+}
+
+.feature {
+   margin-bottom: 1.0em;
+}
+
+
+#projects ul{
+  list-style-type: none;
+}
+
+#projects li{
+  font-size: 1.5rem;
+  line-height: 2.0;
+}
+
 #about{
 
 }
@@ -68,27 +86,12 @@ img, embed, object, video {
     margin-top: 1.0em;
 }
 
-.feature {
-   margin-bottom: 1.0em;
-}
-
-
-#featured div > .img-responsive:hover{
-  cursor: pointer;
-}
-
-li.project{
-  font-size: 1.5rem;
-  line-height: 2.0;
-}
 
 footer{
-  border: 1px solid black;
   margin: 0 auto;
 }
 
 footer p{
-  border: 1px solid red;
   margin: 0 30%;
   text-align: center;
 }
@@ -130,4 +133,14 @@ footer p{
     text-decoration: none;
     font-weight: 300;
     color: purple;
+}
+
+.nav ul {
+  display: inline-block;
+  list-style-type: none;
+
+}
+
+.nav ul li{
+  display: inline-block;
 }

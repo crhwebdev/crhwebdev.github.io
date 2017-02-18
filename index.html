@@ -10,6 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/514b48d814.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -26,16 +27,19 @@
                 <div class="col-md-6 text-right text-uppercase name">
                     <h1 class="big-text thin-text">Carl Hain</h1>
                     <h3 class="small-text header-align">Front-end Ninja</h3>
+                    <div class="nav" id="nav-social">
+                      <ul>
+                        <li><button id='github' aria-describedby='github-name'><a><i class="fa fa-github fa-lg"></i></a></button></li>
+                        <li><button id='codepen'><a><i class="fa fa-codepen fa-lg"></i></a></button></li>
+                        <li><button id='linkedin'><a><i class="fa fa-linkedin fa-lg"></i></a></button></li>
+                      </ul>
+                    </div>
                 </div>
             </header>
 
             <div class="row bar" id="divider"></div>
 
-            <div class="row feature" id="jumbotron">
-                <div class="col-md-12">
-                    <img src="./bootstrap-prestructure_files/1140x350" class="img-responsive">
-                </div>
-            </div>
+
             <!--Portfolio Section -->
             <div id="portfolio">
               <div class="row">
@@ -44,34 +48,40 @@
                   </div>
               </div>
               <!--Featured Section -->
-              <div class="row text-center" id="featured">
+              <div id="featured">
+                <div class="row text-center"> <!--Featured Row 1 -->
                   <div class="col-md-4">
                       <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#pomodoro">
                       <h3 class="medium-text text-uppercase">Pomodoro</h3>
-                      <p><a class="project-link" href="http://s.codepen.io/crhain/debug/gwOmow" target="_blank">http://s.codepen.io/crhain/debug/gwOmow</a></p>
+                      <p><a class="project-link" href="http://s.codepen.io/crhain/debug/gwOmow" target="_blank">Demo</a> | <a class="project-link" href="" target="_blank">Source</a></p>
                   </div>
                   <div class="col-md-4">
                       <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#quote">
                       <h3 class="medium-text text-uppercase">Quote</h3>
-                      <p><a class="project-link" href="http://s.codepen.io/crhain/debug/Bzvppr" target="_blank">http://s.codepen.io/crhain/debug/Bzvppr</a></p>
+                      <p><a class="project-link" href="http://s.codepen.io/crhain/debug/Bzvppr" target="_blank">Demo</a> | <a class="project-link" href="" target="_blank">Source</a></p>
+
                   </div>
                   <div class="col-md-4">
                       <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#calculator">
                       <h3 class="medium-text text-uppercase">Calculator</h3>
-                      <p><a class="project-link" href="http://s.codepen.io/crhain/debug/rrBYGw/YvAgOaVynLpA" target="_blank">http://s.codepen.io/crhain/debug/rrBYGw/YvAgOaVynLpA</a></p>
+                      <p><a class="project-link" href="http://s.codepen.io/crhain/debug/rrBYGw/YvAgOaVynLpA" target="_blank">Demo</a> | <a class="project-link" href="" target="_blank">Source</a></p>
                   </div>
+                </div> <!--end of row 1 -->
+
               </div> <!--end of featured section -->
 
-              <div class="row">
-                  <div class="col-md-12">
-                      <h2 class="light-text">Other Projects</h2>
-                  </div>
-              </div>
+              <div id="projects">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="light-text">Other Projects</h2>
+                    </div>
+                </div>
 
-              <ul class="row" id="projects">
-                <li class="col-md-12 project"><a href="https://crhain.github.io/frogger/" target="_blank">Frogger</a><a href="https://github.com/crhain/frogger" target="_blank"> (source)</a> - A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</li>
-                <li class="col-md-12 project"><a href="https://github.com/crhain/recipeBox" target="_blank">Recipie Box</a> - A useful app for storing recipies made with React.js, Redux, and Webpack.</li>
-              </ul> <!-- end of projects div -->
+                <ul class="row">
+                  <li class="col-md-12 project"><a href="https://crhain.github.io/frogger/" target="_blank">Frogger</a><a href="https://github.com/crhain/frogger" target="_blank"> (source)</a> - A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</li>
+                  <li class="col-md-12 project"><a href="https://github.com/crhain/recipeBox" target="_blank">Recipie Box</a> - A useful app for storing recipies made with React.js, Redux, and Webpack.</li>
+                </ul>
+              </div> <!-- end of projects div -->  
 
             </div> <!--end of portfolio section -->
 
