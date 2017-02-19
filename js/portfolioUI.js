@@ -2,7 +2,60 @@ $('document').ready(function(){
   //handler for page scrolling
   /*1. detach social menu as side bar
     2. change nav menu to fixed placement so it stays on top
+    3. change active nav menu button based on position in document
   */
+  //handler for tracking scroll bar position
+  $(window).on('scroll', function(e){
+    var currentPosition = e.currentTarget.pageYOffset,
+        navOffset = $('#divider').offset().top,
+        portfolioOffset = $('#portfolio').offset().top - 80,
+        aboutOffset = $('#about').offset().top - 80,
+        contactOffset = $('#contact').offset().top - 80,
+        portfolioButton = $('#btn-portfolio'),
+        aboutButton = $('#btn-about'),
+        contactButton = $('#btn-contact');
+
+    //change active nav-menu button based on position in document
+    if(currentPosition <= portfolioOffset){
+        if(!portfolioButton.hasClass('active')){
+          $('.nav-btn.active').removeClass('active');
+          portfolioButton.addClass('active');
+        }
+    }
+    else if(currentPosition <= aboutOffset){
+      //in about section
+      if(!aboutButton.hasClass('active')){
+        $('.nav-btn.active').removeClass('active');
+        aboutButton.addClass('active');
+      }
+    }
+    else if(currentPosition <= contactOffset){
+      //in contact section
+      if(!contactButton.hasClass('active')){
+        $('.nav-btn.active').removeClass('active');
+        contactButton.addClass('active');
+      }
+    }
+
+    //change position of nav menu based on scrolling
+    if(currentPosition > navOffset){
+      if(!$('#nav-bar').hasClass('fixed'))
+      $('#nav-bar').addClass('fixed');
+      $('#contents').addClass('offset');
+    }
+    else{
+      if($('#nav-bar').hasClass('fixed')){
+        $('#nav-bar').removeClass('fixed');
+        $('#contents').removeClass('offset');
+      }
+    }
+
+    //console.log('I am scrolling.' + currentPosition);
+
+    /*get current position of scroll and see if it matches offset for #projects, #about, #contact*/
+
+
+  });
 
   //handler for nav button clicks
   $('.nav-btn').on('click', function(e){
