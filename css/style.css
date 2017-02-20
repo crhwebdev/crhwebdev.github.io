@@ -18,23 +18,40 @@ img, embed, object, video {
   box-shadow: none;
 }
 
+#nav-social a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px black, -2px -2px 2px black;
+  outline: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#nav-social li{
+  margin-right: 10px;
+}
+
+#nav-social i{
+  top: 15%;
+}
+
 #nav-bar{
   width: 100%;
   background-color: #35516E;
   border: 2px solid black;
   box-shadow: 2px 2px 2px black;
 }
-
 #nav-container{
-    width: 60.4%;
+    position: relative;
+    width: 610px;
     margin: 0 auto;
     padding-top: 5px;
+    left: 0px;
+    border: 1px solid black;
+
 }
-/*fixed class to keep nav bar on top when scrolling
-   - add breakpoints along with hamburger menu for small sizes
-
-*/
-
 #nav-bar.fixed{
   position: fixed;
   z-index: 10;
@@ -43,17 +60,12 @@ img, embed, object, video {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-
 #nav-bar.fixed #nav-container{
-  width: 40%;
-}
-
-#contents.offset{
-  position: relative;
-  top: 100px;
+  /*width: 40%;*/
 }
 
 .nav-btn{
+  position: relative;
   display: inline-block;
   width: 200px;
   line-height: 2.0;
@@ -87,24 +99,42 @@ img, embed, object, video {
   box-shadow: 1px 1px 1px black;
 }
 
-#nav-social a{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  box-shadow: 2px 2px 2px black, -2px -2px 2px black;
-  outline: none;
-  font-size: 2rem;
-  text-align: center;
+
+#contents.offset{
+  position: relative;
+  top: 100px;
 }
 
-#nav-social li{
-  margin-right: 10px;
+
+/*1198px  :  contact form message window resizes.  should still have room!*/
+
+/*remove Udacity icon, adjust position on header text, and tweak position
+  of featured items in portfolio */
+@media screen (max-width: 990px){
+
 }
 
-#nav-social i{
-  top: 15%;
+/*make nav-bar buttons smaller*/
+@media screen and (max-width: 640px){
+  .main{
+    background-color: grey;
+  }
+  #nav-container{
+    width: 458px;
+  }
+  .nav-btn{
+    width: 150px;
+  }
+
 }
+/* buttons are now stacked, adjust centering and create hamburger menu */
+@media screen and (max-width: 496px){
+
+}
+
+/* switch to hamburger menu? */
+
+
 
 
 #portfolio{
@@ -277,6 +307,8 @@ footer p{
 .nav ul {
   display: inline-block;
   list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
 
 }
 
