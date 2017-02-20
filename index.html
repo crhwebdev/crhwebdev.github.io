@@ -40,24 +40,27 @@
 
             <div class="row bar" id="divider"></div>
 
-            <div id="nav-bar" class="nav row">
-              <ul class="col-md-12 center">
-                <li><a id="btn-portfolio" class="nav-btn active" href="#">Projects</a></li>
-                <li><a id="btn-about" class="nav-btn" href="#">About</a></li>
-                <li><a id="btn-contact" class="nav-btn" href="#">Contact</a></li>
-              </ul>
-            </div>
+
+            <nav id="nav-bar" class="nav">
+              <div id='nav-container'>
+                <ul>
+                  <li><a id="btn-portfolio" class="nav-btn active" href="#">Projects</a></li>
+                  <li><a id="btn-about" class="nav-btn" href="#">About</a></li>
+                  <li><a id="btn-contact" class="nav-btn" href="#">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
 
             <div id="contents">
               <!--Portfolio Section -->
               <div id="portfolio">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="light-text">Featured Projects</h2>
-                    </div>
-                </div>
                 <!--Featured Section -->
                 <div id="featured">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <h2 class="light-text">Featured Projects</h2>
+                      </div>
+                  </div>
                   <div class="row text-center"> <!--Featured Row 1 -->
                     <div class="col-md-4">
                         <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#pomodoro">
@@ -77,9 +80,17 @@
                     </div>
                   </div> <!--end of row 1 -->
 
+                  <div class="row text-center"> <!-- featured Row 2 -->
+                    <div class="col-md-4">
+                        <img src="./bootstrap-prestructure_files/555x300" class="img-responsive" data-toggle="modal" data-target="#frogger">
+                        <h3 class="medium-text text-uppercase">Frogger</h3>
+                        <p><a class="project-link" href="https://crhain.github.io/frogger/" target="_blank">Demo</a> | <a class="project-link" href="https://github.com/crhain/frogger" target="_blank">Source</a></p>
+                    </div>
+                  </div> <!--end of row 2-->
+
                 </div> <!--end of featured section -->
 
-                <div id="projects">
+                <!-- <div id="projects">
                   <div class="row">
                       <div class="col-md-12">
                           <h2 class="light-text">Other Projects</h2>
@@ -90,8 +101,7 @@
                     <li class="col-md-12 project"><a href="https://crhain.github.io/frogger/" target="_blank">Frogger</a><a href="https://github.com/crhain/frogger" target="_blank"> (source)</a> - A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</li>
                     <li class="col-md-12 project"><a href="https://github.com/crhain/recipeBox" target="_blank">Recipie Box</a> - A useful app for storing recipies made with React.js, Redux, and Webpack.</li>
                   </ul>
-                </div> <!-- end of projects div -->
-
+                </div> end of projects div -->
               </div> <!--end of portfolio section -->
 
               <!--About Section -->
@@ -176,7 +186,7 @@
         </div>
 
 
-<!-- Modal - Calculator -->
+        <!-- Modal - Calculator -->
         <div class="modal fade" id="calculator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -193,6 +203,25 @@
             </div>
           </div>
         </div>
+        <!-- Modal - Frogger -->
+        <div class="modal fade" id="frogger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title text-center" id="myModalLabel">Frogger</h4>
+              </div>
+              <div class="modal-body">
+                <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
+                <p class="text-center">A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
 
         <script>
           //test script for tab menu - need to add menu

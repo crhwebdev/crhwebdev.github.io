@@ -15,24 +15,27 @@ img, embed, object, video {
 
 #nav-bar{
   position: relative;
-  z-index: 10;
-  width: 100%;
+  /*z-index: 10;*/
+  /*width: 100%;*/
   margin: 0 auto;
-  background-color: white;
+  background-color: green;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
 }
 
-#nav-bar>ul{
-  display: block;
-  width: 60%;
-  margin: 0 auto;
+#nav-container{
+    width: 60.4%;
+    margin: 0 auto;
+    padding-top: 5px;
 }
 /*fixed class to keep nav bar on top when scrolling*/
 #nav-bar.fixed{
   position: fixed;
+  width: 60.4%;
+  z-index: 10;
   top: 0px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  background-color: grey;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 #contents.offset{
@@ -85,10 +88,22 @@ img, embed, object, video {
   text-align: center;
 }
 
+#nav-social li{
+  margin-right: 10px;
+}
+
 #nav-social i{
   top: 15%;
 }
 
+
+#portfolio{
+  margin-top: 50px;
+}
+
+#featured h2{
+  margin-bottom: 30px;
+}
 
 #featured div > .img-responsive:hover{
   cursor: pointer;
@@ -108,9 +123,24 @@ img, embed, object, video {
   line-height: 2.0;
 }
 
+#about{
+  margin-top: 50px;
+}
+
+#about h2{
+  margin-bottom: 30px;
+}
+
+
 #contact {
   position: relative;
   font-size: 2rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#contact h2{
+  margin-bottom: 30px;
 }
 
 #contact form label{
@@ -136,11 +166,19 @@ img, embed, object, video {
 
 #contact form button{
   width: 20%;
-  background-color: #CEDAE2;
+  background-color: grey;
+  color: white;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
+  outline: none;
 }
 
 #contact form button:hover{
-  background-color: #B8CBDA;
+  background-color: black;
+}
+
+#contact form button:active{
+  box-shadow: 1px 1px 1px black;
 }
 
 .noshow{
