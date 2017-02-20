@@ -40,16 +40,15 @@
 
             <div class="row bar" id="divider"></div>
 
-
-            <nav id="nav-bar" class="nav">
-              <div id='nav-container'>
+            <div id="nav-bar" class="nav">
+              <div id='nav-container' class="row">
                 <ul>
                   <li><a id="btn-portfolio" class="nav-btn active" href="#">Projects</a></li>
                   <li><a id="btn-about" class="nav-btn" href="#">About</a></li>
                   <li><a id="btn-contact" class="nav-btn" href="#">Contact</a></li>
                 </ul>
               </div>
-            </nav>
+            </div>
 
             <div id="contents">
               <!--Portfolio Section -->
@@ -58,7 +57,7 @@
                 <div id="featured">
                   <div class="row">
                       <div class="col-md-12">
-                          <h2 class="light-text">Featured Projects</h2>
+                          <h2 class="medium-text">Featured Projects</h2>
                       </div>
                   </div>
                   <div class="row text-center"> <!--Featured Row 1 -->
@@ -104,11 +103,12 @@
                 </div> end of projects div -->
               </div> <!--end of portfolio section -->
 
+              <div class="row bar" id="divider"></div>
               <!--About Section -->
               <div id="about">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2 class="light-text">About</h2>
+                        <h2 class="medium-text">About</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -119,10 +119,14 @@
                 </div>
               </div> <!--end of about section-->
 
+              <div class="row bar" id="divider"></div>
+
               <!--Contact Section -->
               <div id="contact">
                 <div class="row">
-                  <h2 class="light-text col-md-12">Contact</h2>
+                  <div class="col-md-12">
+                    <h2 class="medium-text">Contact</h2>
+                  </div>
                 </div>
 
                 <form id="contact-form">
@@ -220,20 +224,6 @@
             </div>
           </div>
         </div>
-
-
-
-        <script>
-          //test script for tab menu - need to add menu
-          $('document').ready(function(){
-            $('.logo').on('click', function(e){
-              $('#about').toggleClass('noshow');
-              $('#portfolio').toggleClass('noshow');
-            });
-
-          });
-        </script>
-
 
     </body>
 

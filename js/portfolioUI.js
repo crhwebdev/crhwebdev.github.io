@@ -83,6 +83,7 @@ $('document').ready(function(){
     messageHTML = $('#contact-message').val().replace(validate, "");;
     messageHTML += "<br> Phone: " + $('#contact-phone').val();
     if(!fromEmail || !fromName || !messageHTML){
+      //add red outlines to required areas that are blank
       alert('please fill out all sections!');
     }
     else{
