@@ -49,12 +49,6 @@ $('document').ready(function(){
         $('#contents').removeClass('offset');
       }
     }
-
-    //console.log('I am scrolling.' + currentPosition);
-
-    /*get current position of scroll and see if it matches offset for #projects, #about, #contact*/
-
-
   });
 
   //handler for nav button clicks
@@ -70,6 +64,16 @@ $('document').ready(function(){
     $('html, body').animate({
             scrollTop: $(id).offset().top - 80
         }, 250);
+  });
+  //handler for hamburger-helper clicks
+  $('#hamburger-helper').on('click', function(e){
+    console.log("You clicked me!");
+    $('#nav-container').addClass('expanded');
+    e.preventDefault();
+  });
+  $('#hamburger-closer').on('click', function(e){
+    $('#nav-container').removeClass('expanded');
+    e.preventDefault();
   });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){
