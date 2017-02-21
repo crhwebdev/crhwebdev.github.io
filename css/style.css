@@ -146,6 +146,10 @@ img, embed, object, video {
    margin-bottom: 1.0rem;
 }
 
+.feature-item img{
+  margin: 0 auto;
+}
+
 
 #projects ul{
   list-style-type: none;
