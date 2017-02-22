@@ -77,24 +77,48 @@ $('document').ready(function(){
   });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){
-    var fromEmail = "",
-        fromName = "",
-        messageHTML = "";
     var validate = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
+    var contactNameElement = $('#contact-name'),
+        contactEmailElement = $('#contact-email'),
+        contactPhoneElement = $('#contact-phone'),
+        contactMessageElement = $('#contact-message'),
+        fromName = contactNameElement.val().replace(validate, "")
+        fromEmail = contactEmailElement.val().replace(validate, ""),
+        fromPhone = contactPhoneElement.val().replace(validate, ""),
+        messageHTML = contactMessageElement.val().replace(validate, "") +
+                      "<br> PHone:" + contactPhoneElement.val();
 
-    fromEmail = $('#contact-email').val().replace(validate, "");
-    fromName = $('#contact-name').val().replace(validate, "");;
-    messageHTML = $('#contact-message').val().replace(validate, "");;
-    messageHTML += "<br> Phone: " + $('#contact-phone').val();
     if(!fromEmail || !fromName || !messageHTML){
       //add red outlines to required areas that are blank
-      alert('please fill out all sections!');
+
+      if(contactNameElement.val() == ''){
+        contactNameElement.addClass('red-outline');
+      }
+      else{
+        contactNameElement.removeClass('red-outline');
+      }
+      if(contactEmailElement.val() == ''){
+        contactEmailElement.addClass('red-outline');
+      }
+      else{
+        contactEmailElement.removeClass('red-outline');
+      }
+      if(contactMessageElement.val() == ''){
+        contactMessageElement.addClass('red-outline');
+      }
+      else{
+        contactMessageElement.removeClass('red-outline');
+      }
+
+      alert('Please fill out all sections!');
     }
     else{
       console.log('sending email from ' + fromName + ' at ' + fromEmail + " : " + messageHTML);
       // parameters: service_id, template_id, template_parameters - function to send emails on form submit
-      emailjs.send("default_service", "template_pDJFeKtF", {"from_email":fromEmail,"from_name": fromName,"message_html": messageHTML});
+      //emailjs.send("default_service", "template_pDJFeKtF", {"from_email":fromEmail,"from_name": fromName,"message_html": messageHTML});
       $('#contact-form>input, #contact-form>textarea').val('');
+      $('#contact-form>input, #contact-form>teextarea').removeClass('red-outline');
+      alert('Thank you!');
     }
     e.preventDefault();
   });

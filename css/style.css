@@ -198,9 +198,10 @@ img, embed, object, video {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   margin-bottom: 10px;
   font-size: 2rem;
+  background-color: #DCE5EE;
 }
 
 #contact form textarea{
@@ -209,6 +210,11 @@ img, embed, object, video {
   margin-bottom: 20px;
   resize: none;
   font-size: 2rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid black;
+  background-color: #DCE5EE;
 }
 
 #contact-submit{
@@ -222,6 +228,11 @@ img, embed, object, video {
   outline: none;
   font-size: 2rem;*/
 }
+
+#contact form input.red-outline, #contact form textarea.red-outline{
+  border-bottom: 2px solid red;
+}
+
 
 .noshow{
   display: none;
@@ -405,5 +416,7 @@ footer p{
     width: 50%;
   }
 }
+
+
 
 /* switch to hamburger menu? */
