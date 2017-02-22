@@ -202,6 +202,7 @@ img, embed, object, video {
   margin-bottom: 10px;
   font-size: 2rem;
   background-color: #DCE5EE;
+  outline: none;
 }
 
 #contact form textarea{
@@ -215,6 +216,7 @@ img, embed, object, video {
   border-left: none;
   border-bottom: 2px solid black;
   background-color: #DCE5EE;
+  outline: none;
 }
 
 #contact-submit{

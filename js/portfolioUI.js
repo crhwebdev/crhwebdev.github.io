@@ -77,7 +77,7 @@ $('document').ready(function(){
   });
   //handler for flip card clicks
   $('.flip-container').on('click', function(e){
-    console.log('clicked on flip container');    
+    console.log('clicked on flip container');
     $(this).children('.flipper').toggleClass('flip');
   });
   //handler for contact form submission
@@ -90,8 +90,8 @@ $('document').ready(function(){
         fromName = contactNameElement.val().replace(validate, "")
         fromEmail = contactEmailElement.val().replace(validate, ""),
         fromPhone = contactPhoneElement.val().replace(validate, ""),
-        messageHTML = contactMessageElement.val().replace(validate, "") +
-                      "<br> PHone:" + contactPhoneElement.val();
+        messageHTML = contactMessageElement.val().replace(validate, "");
+
 
     if(!fromEmail || !fromName || !messageHTML){
       //add red outlines to required areas that are blank
@@ -118,11 +118,12 @@ $('document').ready(function(){
       alert('Please fill out all sections!');
     }
     else{
+      messageHTML += "<br> Phone:" + contactPhoneElement.val();
       console.log('sending email from ' + fromName + ' at ' + fromEmail + " : " + messageHTML);
       // parameters: service_id, template_id, template_parameters - function to send emails on form submit
-      //emailjs.send("default_service", "template_pDJFeKtF", {"from_email":fromEmail,"from_name": fromName,"message_html": messageHTML});
+      emailjs.send("default_service", "template_pDJFeKtF", {"from_email":fromEmail,"from_name": fromName,"message_html": messageHTML});
       $('#contact-form>input, #contact-form>textarea').val('');
-      $('#contact-form>input, #contact-form>teextarea').removeClass('red-outline');
+      $('#contact-form>input, #contact-form>textarea').removeClass('red-outline');
       alert('Thank you!');
     }
     e.preventDefault();

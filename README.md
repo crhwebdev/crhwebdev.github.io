@@ -2,6 +2,6 @@ PORTFOLIO WEBSITE
 ======================================================================
 
 ### To Do:
-- add flip card effect to portfolio images
-- finish social button appearance
+- fix responsive design for feature items.
 - finish responsive design on header and fix hamburger menu button layout
+- finish social button appearance
