@@ -75,6 +75,11 @@ $('document').ready(function(){
     $('#nav-container').removeClass('expanded');
     e.preventDefault();
   });
+  //handler for flip card clicks
+  $('.flip-container').on('click', function(e){
+    console.log('clicked on flip container');    
+    $(this).children('.flipper').toggleClass('flip');
+  });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){
     var validate = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
