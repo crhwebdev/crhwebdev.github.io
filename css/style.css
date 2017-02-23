@@ -1,3 +1,6 @@
+/*remove Udacity icon, adjust position on header text, and tweak position
+  of featured items in portfolio */
+
 *{
   position: relative;
 }
@@ -13,33 +16,25 @@ img, embed, object, video {
     max-width: 100%;
 }
 
+/*header formating*/
 #header img{
   border: none;
   box-shadow: none;
 }
 
-.social-nav-btn{
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  box-shadow: 1px 1px 10px 1px black; /*, -1px -1px 10px 1px black;*/
-  outline: none;
-  font-size: 2rem;
-  text-align: center;
-  margin-right: 10px;
+/*nav bar formating*/
+.nav ul {
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
-
-.social-nav-btn a{
-  color: #35516E;
-  outline: none;
+.nav ul li{
+  display: inline-block;
 }
-
-.social-nav-btn a i{
-  top: 15%;
-}
-
-.social-nav-btn a:hover{
-  opacity: 0.5;
+.nav ul li:last-child{
+  margin-right: 0px
 }
 
 #nav-bar{
@@ -53,6 +48,7 @@ img, embed, object, video {
     width: 610px;
     margin: 0 auto;
     padding-top: 5px;
+    padding-bottom: 5px;
     left: 0px;
     /*border: 1px solid black;*/
 }
@@ -67,74 +63,8 @@ img, embed, object, video {
 #nav-bar.fixed #nav-container{
   /*width: 40%;*/
 }
-#hamburger-helper{
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 35px;
-  opacity: 0;
-  text-align: center;
-}
 
-#hamburger-closer{
-  display: none;
-  position: relative;
-  z-index: -1;
-  opacity: 0;
-}
-
-.basic-btn{
-  position: relative;
-  display: inline-block;
-  line-height: 2.0;
-  text-align: center;
-  border: 2px solid black;
-  box-shadow: 2px 2px 10px 1px black, inset -1px -1px 10px 2px #453F34;
-  background-color: #A57C35;/*#bcbbbb;*/
-  color: white;
-  font-size: 2rem;
-}
-
-.basic-btn:hover{
-  background-color: #765F36;
-}
-
-.basic-btn:active{
-  box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;
-}
-
-.nav-btn{
-  width: 200px;
-  line-height: 2.0;
-  text-decoration: none;
-}
-
-.nav-btn:hover{
-  text-decoration: none;
-  color: white;
-}
-
-.nav-btn:visited, .nav-btn:link{
-  text-decoration: none;
-  color: white;
-}
-
-.nav-btn.active{
-  background-color: #765F36;
-  box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;
-}
-
-/*#contents.offset{
-  position: relative;
-  top: 100px;
-}*/
-
-
-/*1198px  :  contact form message window resizes.  should still have room!*/
-
-/*remove Udacity icon, adjust position on header text, and tweak position
-  of featured items in portfolio */
-
+/*Portfolio formating*/
 #portfolio{
   margin-top: 50px;
   background-color: #DCE5EE;
@@ -154,7 +84,6 @@ img, embed, object, video {
   margin: 0 auto;
 }
 
-
 #projects ul{
   list-style-type: none;
 }
@@ -164,6 +93,7 @@ img, embed, object, video {
   line-height: 2.0;
 }
 
+/*about formating*/
 #about{
   margin-top: 50px;
   margin-bottom: 50px;
@@ -176,7 +106,7 @@ img, embed, object, video {
   margin-bottom: 30px;
 }
 
-
+/*Contact formating*/
 #contact {
   position: relative;
   margin-top: 50px;
@@ -188,7 +118,6 @@ img, embed, object, video {
 
 #contact h2{
   margin-bottom: 30px;
-
 }
 
 #contact form label{
@@ -226,32 +155,13 @@ img, embed, object, video {
 #contact-submit{
   width: 20%;
   outline: none;
-  /*width: 20%;
-  background-color: #bcbbbb;
-  color: white;
-  border: 2px solid black;
-  box-shadow: 2px 2px 2px black;
-  outline: none;
-  font-size: 2rem;*/
 }
 
 #contact form input.red-outline, #contact form textarea.red-outline{
   border-bottom: 2px solid red;
 }
 
-.header-align {
-    margin-top: -0.25rem;
-}
-
-.name {
-    margin-top: -0.5rem;
-}
-
-.logo {
-    margin-top: 1.0rem;
-}
-
-
+/*footer formating*/
 footer{
   margin: 0 auto;
 }
@@ -261,18 +171,93 @@ footer p{
   text-align: center;
 }
 
+
+/*Buttons and more buttons!*/
+.basic-btn{
+  position: relative;
+  display: inline-block;
+  line-height: 2.0;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px 1px black, inset -1px -1px 10px 2px #453F34;
+  background-color: #A57C35;/*#bcbbbb;*/
+  color: white;
+  font-size: 2rem;
+}
+.basic-btn:hover{
+  background-color: #765F36;
+}
+.basic-btn:active{
+  box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;
+}
+.social-nav-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 10px 1px black; /*, -1px -1px 10px 1px black;*/
+  outline: none;
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 10px;
+}
+.social-nav-btn a{
+  color: #35516E;
+  outline: none;
+}
+.social-nav-btn a i{
+  top: 15%;
+}
+.social-nav-btn a:hover{
+  opacity: 0.5;
+}
+.nav-btn{
+  width: 200px;
+  line-height: 2.0;
+  cursor: pointer;
+  /*text-decoration: none;*/
+}
+.nav-btn:visited, .nav-btn:link{
+  /*text-decoration: none;
+  color: white;*/
+}
+.nav-btn.active{
+  background-color: #765F36;
+  box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;
+}
+#hamburger-helper{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 35px;
+  opacity: 0;
+  text-align: center;
+}
+#hamburger-closer{
+  display: none;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+}
+
+/*Some basic formating stuff*/
+.header-align {
+    margin-top: -0.25rem;
+}
+.name {
+    margin-top: -0.5rem;
+}
+.logo {
+    margin-top: 1.0rem;
+}
 .big-text {
     font-size: 6rem;
 }
-
 .small-text{
     font-size: 1.6rem;
 }
-
 .medium-text {
     font-size: 3rem;
 }
-
 .thin-text {
     font-weight: 100;
 }
@@ -304,25 +289,13 @@ footer p{
     color: purple;
 }
 
-.nav ul {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 0px;
-  padding-left: 0px;
-
-}
-
-.nav ul li{
-  display: inline-block;
-}
-
 .img-shadowed{
   border: 2px solid black;
   box-shadow: 2px 2px 10px 1px black;
 
 }
 
-/* entire container, keeps perspective */
+/* flip card effect*/
 .flip-container {
 	perspective: 1000px;
   -webkit-perspective: 1000px;
@@ -331,21 +304,16 @@ footer p{
 	.flip {
 		transform: rotateY(180deg);
 	}
-
 .flip-container, .front, .back {
 	width: 100%;/*320px;*/
   height: 190px;
-
 }
-
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
 	position: relative;
 }
-
 /* hide back of pane during swap */
 .front, .back {
   backface-visibility: hidden;
@@ -354,29 +322,28 @@ footer p{
 	top: 0;
 	left: 0;
 }
-
 /* front pane, placed above back */
 .front {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
-
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
   border: 1px solid black;
   background-color: white;
 }
-
 .flipcard{
   cursor: pointer;
 }
-
 .flipcard:hover{
   box-shadow: 4px 4px 20px 2px black;
   transition: all 0.25s;
 }
+
+
+/*Responsive layout*/
 
 /*fix for feature item sizing*/
 @media screen and (max-width: 1198px){
@@ -385,7 +352,6 @@ footer p{
     height: 150px;
   }
 }
-
 @media screen and (max-width: 990px){
   .flip-container, .front, .back {
     width: 555px;/*320px;*/
@@ -402,7 +368,6 @@ footer p{
     width: 35%;
   }
 }
-
 /*make nav-bar buttons smaller*/
 @media screen and (max-width: 640px){
   #nav-container{
@@ -411,9 +376,7 @@ footer p{
   .nav-btn{
     width: 150px;
   }
-
 }
-
 @media screen and (max-width: 624px){
   .flip-container, .front, .back {
     width: 100%;
@@ -421,7 +384,6 @@ footer p{
     margin: 0 auto;
   }
 }
-
 /* buttons are now stacked, adjust centering and create hamburger menu */
 @media screen and (max-width: 496px){
   .flip-container, .front, .back {
@@ -458,7 +420,7 @@ footer p{
     /*top: 25px;*/
   }
   #nav-container.expanded .nav-btn{
-    width: 110px;
+    width: 32.66%;/*110px;*/
     height: 100%;
     border: 2px solid black;
     box-shadow: 2px 2px 10px 1px black, inset -1px -1px 10px 2px #453F34;
