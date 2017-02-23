@@ -18,23 +18,28 @@ img, embed, object, video {
   box-shadow: none;
 }
 
-#nav-social a{
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  box-shadow: 2px 2px 2px black, -2px -2px 2px black;
+.social-nav-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 10px 1px black; /*, -1px -1px 10px 1px black;*/
   outline: none;
   font-size: 2rem;
   text-align: center;
-}
-
-#nav-social li{
   margin-right: 10px;
 }
 
-#nav-social i{
+.social-nav-btn a{
+  color: #35516E;
+  outline: none;
+}
+
+.social-nav-btn a i{
   top: 15%;
+}
+
+.social-nav-btn a:hover{
+  opacity: 0.5;
 }
 
 #nav-bar{
@@ -234,11 +239,6 @@ img, embed, object, video {
   border-bottom: 2px solid red;
 }
 
-
-.noshow{
-  display: none;
-}
-
 .header-align {
     margin-top: -0.25rem;
 }
@@ -425,7 +425,7 @@ footer p{
 /* buttons are now stacked, adjust centering and create hamburger menu */
 @media screen and (max-width: 496px){
   .flip-container, .front, .back {
-    height: 43vmin;    
+    height: 43vmin;
   }
   .nav-btn{
     width: 50px;
