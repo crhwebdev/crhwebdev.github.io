@@ -22,11 +22,14 @@ img, embed, object, video {
 .header-align {
     margin-top: -0.25rem;
 }
-.name {
-    margin-top: -0.5rem;
+#name {
 }
-.logo {
-    margin-top: 1.0rem;
+#logo {
+}
+#nav-social{
+}
+#nav-social>ul{
+  padding: 0px;
 }
 
 /*nav bar formating*/
@@ -34,14 +37,15 @@ img, embed, object, video {
   display: inline-block;
   list-style-type: none;
   width: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 .nav ul li{
   display: inline-block;
 }
 .nav ul li:last-child{
-  margin-right: 0px
+  margin-right: 0px;
+  padding-right: 0px;
 }
 #nav-bar{
   width: 100%;
@@ -205,6 +209,9 @@ footer p{
   text-align: center;
   margin-right: 10px;
 }
+.social-nav-btn:last-child{
+  margin-right: 0;
+}
 .social-nav-btn a{
   color: #35516E;
   outline: none;
@@ -331,7 +338,6 @@ footer p{
   transition: all 0.25s;
 }
 
-
 /*Responsive layout*/
 
 /*fix for feature item sizing*/
@@ -342,6 +348,9 @@ footer p{
   }
 }
 @media screen and (max-width: 990px){
+  .logo{
+    top: 120px;
+  }
   .flip-container, .front, .back {
     width: 555px;/*320px;*/
     height: 300px;
