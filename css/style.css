@@ -4,13 +4,11 @@
 *{
   position: relative;
 }
-
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     color: #AB8A44;/*#747704;*/
 }
-
 /* to ensure these elements do not overflow their containers */
 img, embed, object, video {
     max-width: 100%;
@@ -20,6 +18,15 @@ img, embed, object, video {
 #header img{
   border: none;
   box-shadow: none;
+}
+.header-align {
+    margin-top: -0.25rem;
+}
+.name {
+    margin-top: -0.5rem;
+}
+.logo {
+    margin-top: 1.0rem;
 }
 
 /*nav bar formating*/
@@ -36,7 +43,6 @@ img, embed, object, video {
 .nav ul li:last-child{
   margin-right: 0px
 }
-
 #nav-bar{
   width: 100%;
   background-color: #35516E;
@@ -71,23 +77,19 @@ img, embed, object, video {
   /*border: 2px solid black;*/
   padding: 20px;
 }
-
 #featured h2{
   margin-bottom: 30px;
 }
-
 .feature {
    margin-bottom: 1.0rem;
 }
-
 .feature-item img{
   margin: 0 auto;
 }
-
+/*deprecated css - project listing not currently included*/
 #projects ul{
   list-style-type: none;
 }
-
 #projects li{
   font-size: 1.5rem;
   line-height: 2.0;
@@ -101,7 +103,6 @@ img, embed, object, video {
   background-color: #CFE2EB;
   /*border: 2px solid black;*/
 }
-
 #about h2{
   margin-bottom: 30px;
 }
@@ -115,16 +116,13 @@ img, embed, object, video {
   /*border: 2px solid black;*/
   padding: 20px;
 }
-
 #contact h2{
   margin-bottom: 30px;
 }
-
 #contact form label{
   opacity: 0;
   z-index: -1;
 }
-
 #contact form input{
   display: block;
   width: 25%;
@@ -137,7 +135,6 @@ img, embed, object, video {
   background-color: #DCE5EE;
   outline: none;
 }
-
 #contact form textarea{
   display: block;
   width: 50%;
@@ -151,12 +148,10 @@ img, embed, object, video {
   background-color: #DCE5EE;
   outline: none;
 }
-
 #contact-submit{
   width: 20%;
   outline: none;
 }
-
 #contact form input.red-outline, #contact form textarea.red-outline{
   border-bottom: 2px solid red;
 }
@@ -165,12 +160,10 @@ img, embed, object, video {
 footer{
   margin: 0 auto;
 }
-
 footer p{
   margin: 0 30%;
   text-align: center;
 }
-
 
 /*Buttons and more buttons!*/
 .basic-btn{
@@ -240,15 +233,6 @@ footer p{
 }
 
 /*Some basic formating stuff*/
-.header-align {
-    margin-top: -0.25rem;
-}
-.name {
-    margin-top: -0.5rem;
-}
-.logo {
-    margin-top: 1.0rem;
-}
 .big-text {
     font-size: 6rem;
 }
@@ -261,38 +245,31 @@ footer p{
 .thin-text {
     font-weight: 100;
 }
-
 .light-text {
     color: #bcbbbb;
 }
-
 .bar {
     background-color: #bcbbbb;
     height: 3px;
     margin-top: 0.75rem;
     margin-bottom: 1.5rem;
 }
-
 .top-bar{
   margin-top: 5rem;
 }
-
 .project-link {
     text-decoration: none;
     font-weight: 300;
     color: #747704
 }
-
 .project-link:hover {
     text-decoration: none;
     font-weight: 300;
     color: purple;
 }
-
 .img-shadowed{
   border: 2px solid black;
   box-shadow: 2px 2px 10px 1px black;
-
 }
 
 /* flip card effect*/
