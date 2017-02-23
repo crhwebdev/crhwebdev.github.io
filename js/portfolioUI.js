@@ -8,28 +8,31 @@ $('document').ready(function(){
   $(window).on('scroll', function(e){
     var currentPosition = e.currentTarget.pageYOffset,
         navOffset = $('#divider').offset().top,
-        portfolioOffset = $('#portfolio').offset().top - 80,
-        aboutOffset = $('#about').offset().top - 80,
-        contactOffset = $('#contact').offset().top - 80,
+        portfolioOffset = $('#portfolio').offset().top - 150,
+        aboutOffset = $('#about').offset().top - 150,
+        contactOffset = $('#contact').offset().top - 400,
         portfolioButton = $('#btn-portfolio'),
         aboutButton = $('#btn-about'),
         contactButton = $('#btn-contact');
 
     //change active nav-menu button based on position in document
-    if(currentPosition <= portfolioOffset){
+    //At projects
+    if(currentPosition < aboutOffset){
         if(!portfolioButton.hasClass('active')){
           $('.nav-btn.active').removeClass('active');
           portfolioButton.addClass('active');
         }
     }
-    else if(currentPosition <= aboutOffset){
+    //at about
+    else if(currentPosition === aboutOffset || currentPosition < contactOffset){
       //in about section
       if(!aboutButton.hasClass('active')){
         $('.nav-btn.active').removeClass('active');
         aboutButton.addClass('active');
       }
     }
-    else if(currentPosition <= contactOffset){
+    //at contacts
+    else{
       //in contact section
       if(!contactButton.hasClass('active')){
         $('.nav-btn.active').removeClass('active');
@@ -62,7 +65,7 @@ $('document').ready(function(){
     });
     btn.toggleClass('active');
     $('html, body').animate({
-            scrollTop: $(id).offset().top - 80
+            scrollTop: $(id).offset().top - 150
         }, 250);
   });
   //handler for hamburger-helper clicks
