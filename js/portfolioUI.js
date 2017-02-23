@@ -39,7 +39,6 @@ $('document').ready(function(){
         contactButton.addClass('active');
       }
     }
-
     //change position of nav menu based on scrolling
     if(currentPosition > navOffset){
       if(!$('#nav-bar').hasClass('fixed'))
@@ -53,7 +52,11 @@ $('document').ready(function(){
       }
     }
   });
-
+  //handler for window resize
+  /*$( window ).resize(function() {
+    //$( "body" ).prepend( "<div>" + $( window ).width() + "</div>" );
+    //console.log('My window width is: ' + $(window).width());
+  });*/
   //handler for nav button clicks
   $('.nav-btn').on('click', function(e){
     var btnList = $('.nav-btn');

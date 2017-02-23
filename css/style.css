@@ -107,6 +107,18 @@ img, embed, object, video {
   margin-bottom: 30px;
 }
 
+#about img{
+  margin-bottom: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+#about p{
+  display: inline;
+  font-size: 2rem;
+  float: right;
+}
+
 /*Contact formating*/
 #contact {
   position: relative;
@@ -334,6 +346,12 @@ footer p{
     width: 555px;/*320px;*/
     height: 300px;
     margin: 0 auto;
+  }
+  #about img{
+    float: none;
+  }
+  #about p{
+    float: none;
   }
   #contact form input{
     width: 50%;
