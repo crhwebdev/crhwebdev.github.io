@@ -330,6 +330,7 @@ footer p{
   border: 1px solid black;
   background: -webkit-linear-gradient(top, #ffffff 15%,#F94545 16%,#ffffff 16%,#ffffff 25%,#85b2d3 26%,#ffffff 26%, #ffffff 35%,#85b2d3 36%,#ffffff 36%,#ffffff 45%,#85b2d3 46%,#ffffff 46%, #ffffff 55%,#85b2d3 56%,#ffffff 56%, #ffffff 65%,#85b2d3 66%,#ffffff 66%, #ffffff 75%,#85b2d3 76%,#ffffff 76%, #ffffff 85%,#85b2d3 86%,#ffffff 86%, #ffffff 95%,#85b2d3 96%,#ffffff 96%);
   background: linear-gradient(top, #ffffff 15%,#F94545 16%,#ffffff 16%,#ffffff 25%,#85b2d3 26%,#ffffff 26%, #ffffff 35%,#85b2d3 36%,#ffffff 36%,#ffffff 45%,#85b2d3 46%,#ffffff 46%, #ffffff 55%,#85b2d3 56%,#ffffff 56%, #ffffff 65%,#85b2d3 66%,#ffffff 66%, #ffffff 75%,#85b2d3 76%,#ffffff 76%, #ffffff 85%,#85b2d3 86%,#ffffff 86%, #ffffff 95%,#85b2d3 96%,#ffffff 96%);
+  overflow: hidden;
 }
 .back p{
   margin-top: 2em;
