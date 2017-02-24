@@ -41,14 +41,14 @@ $('document').ready(function(){
     }
     //change position of nav menu based on scrolling
     if(currentPosition > navOffset){
-      if(!$('#nav-bar').hasClass('fixed'))
-      $('#nav-bar').addClass('fixed');
-      $('#contents').addClass('offset');
+      if(!$('#nav-bar').hasClass('is-fixed'))
+      $('#nav-bar').addClass('is-fixed');
+      //$('#contents').addClass('offset');
     }
     else{
-      if($('#nav-bar').hasClass('fixed')){
-        $('#nav-bar').removeClass('fixed');
-        $('#contents').removeClass('offset');
+      if($('#nav-bar').hasClass('is-fixed')){
+        $('#nav-bar').removeClass('is-fixed');
+        //$('#contents').removeClass('offset');
       }
     }
   });

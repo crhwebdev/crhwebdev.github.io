@@ -1,6 +1,32 @@
 /*remove Udacity icon, adjust position on header text, and tweak position
   of featured items in portfolio */
 
+  @keyframes slidein{
+    0%{
+      transform: translate(100%, 0%);
+      color: black;
+    }
+    30%{
+      transform: translate(0%, 0%);
+      color: black;
+    }
+    50%{
+      color: black;
+    }
+    100%{
+      color: #AB8A44;
+    }
+  }
+  @keyframes spin {
+      from {
+          transform: rotate(0deg);
+      }
+
+      to{
+          transform: rotate(360deg);
+      }
+  }
+
 *{
   position: relative;
 }
@@ -9,12 +35,14 @@ body {
     font-weight: 400;
     color: #AB8A44;/*#747704;*/
 }
-
 /* to ensure these elements do not overflow their containers */
 img, embed, object, video {
-    max-width: 100%;
+  max-width: 100%;
 }
-
+.spin:hover{
+  animation-name: spin;
+  animation-duration: 5s;
+}
 /*header formating*/
 #header img{
   border: none;
@@ -24,6 +52,11 @@ img, embed, object, video {
     margin-top: -0.25rem;
 }
   #name {
+    overflow: hidden;
+  }
+  #name h3{
+    animation-name: slidein;
+    animation-duration: 2s;
   }
   #logo {
   }
@@ -53,6 +86,8 @@ img, embed, object, video {
   width: 100%;
   border: 2px solid black;
   box-shadow: 2px 2px 10px 1px black;
+  overflow: hidden;
+  transition: height 0.2s;
 }
 #nav-container{
     position: relative;
@@ -63,15 +98,17 @@ img, embed, object, video {
     left: 0px;
     /*border: 1px solid black;*/
 }
-#nav-bar.fixed{
+#nav-bar.is-fixed{
   position: fixed;
   z-index: 10;
   top: 0px;
   left: 0px;/*360px;*/
   padding-top: 2px;
   padding-bottom: 2px;
+  animation-name: drop;
+  animation-duration: 0.6s;
 }
-#nav-bar.fixed #nav-container{
+#nav-bar.is-fixed #nav-container{
   /*width: 40%;*/
 }
 
@@ -384,6 +421,7 @@ footer p{
   #nav-container{
     width: 50px;
     padding: 0px;
+    transition: width 0.6s;
   }
   #nav-container ul{
     line-height: 0.15;
@@ -397,6 +435,7 @@ footer p{
     width: 100%;/*156px;*/
     height: 100%;
     overflow: visible;
+
     /*top: 25px;*/
   }
   #nav-container.is-expanded .nav-btn{
