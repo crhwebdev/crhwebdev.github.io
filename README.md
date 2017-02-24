@@ -3,10 +3,10 @@ PORTFOLIO WEBSITE
 
 ### To Do:
 
-- add animation effect to hamburger menu?
+- reset active nav button on screen resize.
 - add text and about picture
 - set element sizing to em or rem so that elements can scale to increased text size
-- reset active nav button on screen resize.
+
 
 ### Browser Compatiblity:
 

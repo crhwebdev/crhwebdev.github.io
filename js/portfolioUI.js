@@ -52,7 +52,10 @@ $('document').ready(function(){
       }
     }
   });
-  //handler for window resize
+  /*handler for window resize
+    1. flip features back over if they are in flipped position
+    2. reset active nav bar button based on new position in document
+  */
   /*$( window ).resize(function() {
     //$( "body" ).prepend( "<div>" + $( window ).width() + "</div>" );
     //console.log('My window width is: ' + $(window).width());
@@ -73,7 +76,6 @@ $('document').ready(function(){
   });
   //handler for hamburger-helper clicks
   $('#hamburger-helper').on('click', function(e){
-    console.log("You clicked me!");
     $('#nav-container').addClass('is-expanded');
     e.preventDefault();
   });
@@ -83,8 +85,19 @@ $('document').ready(function(){
   });
   //handler for flip card clicks
   $('.flip-container').on('click', function(e){
-    console.log('clicked on flip container');
-    $(this).children('.flipper').toggleClass('is-fliped');
+    var flipper = $(this).children('.flipper');
+    var back = flipper.children('.back');
+    var backScrollHeight = back.prop('scrollHeight');
+    flipper.toggleClass('is-fliped');
+    if(back.css('height')){
+        back.removeAttr('style');
+    }
+    if(backScrollHeight > back.height()){
+      if(flipper.hasClass('is-fliped')){
+        back.height(backScrollHeight);
+        console.log(back.prop('scrollHeight'));
+      }
+    }
   });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){

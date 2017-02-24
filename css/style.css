@@ -114,7 +114,7 @@ img, embed, object, video {
 
 /*Portfolio formating*/
 #portfolio{
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 20px;
 }
 #featured h2{
@@ -137,8 +137,6 @@ img, embed, object, video {
 
 /*about formating*/
 #about{
-  margin-top: 50px;
-  margin-bottom: 50px;
   padding: 20px;
 }
 #about h2{
@@ -159,8 +157,6 @@ img, embed, object, video {
 /*Contact formating*/
 #contact {
   position: relative;
-  margin-top: 50px;
-  margin-bottom: 30px;
   /*border: 2px solid black;*/
   padding: 20px;
 }
@@ -302,7 +298,10 @@ footer p{
 .flip-container, .front, .back {
 	width: 100%;/*320px;*/
   height: 190px;
+  z-index: 5;
+
 }
+
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
@@ -312,31 +311,35 @@ footer p{
 .front, .back {
   backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
+  transition: height 0.6s ease;
   /*transition: 0.6s;
   transform-style: preserve-3d;*/
+  z-index: 5;
 	position: absolute;
 	top: 0;
 	left: 0;
+
 }
 /* front pane, placed above back */
 .front {
-	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+  overflow: hidden;
 }
 /*.back p{
 
 }*/
 .is-flipcard{
   cursor: pointer;
+
 }
 .is-flipcard:hover{
   box-shadow: 4px 4px 20px 2px black;
-  transition: all 0.25s;
+  transition: box-shadow 0.25s;
 }
 
 /*Responsive layout*/
@@ -345,7 +348,7 @@ footer p{
 @media screen and (max-width: 1198px){
   .flip-container, .front, .back {
     width: 100%;/*320px;*/
-    height: 150px;
+    height: 150px;/*150px;*/
   }
   /*.back p{
     margin-top: 1.5em;
@@ -469,4 +472,8 @@ footer p{
   #contact-submit{
     width: 50%;
   }
+}
+
+.scrollable {
+  overflow-y: scroll;
 }
