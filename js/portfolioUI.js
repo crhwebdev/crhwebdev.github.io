@@ -18,25 +18,25 @@ $('document').ready(function(){
     //change active nav-menu button based on position in document
     //At projects
     if(currentPosition < aboutOffset){
-        if(!portfolioButton.hasClass('active')){
-          $('.nav-btn.active').removeClass('active');
-          portfolioButton.addClass('active');
+        if(!portfolioButton.hasClass('is-active')){
+          $('.nav-btn.is-active').removeClass('is-active');
+          portfolioButton.addClass('is-active');
         }
     }
     //at about
     else if(currentPosition === aboutOffset || currentPosition < contactOffset){
       //in about section
-      if(!aboutButton.hasClass('active')){
-        $('.nav-btn.active').removeClass('active');
-        aboutButton.addClass('active');
+      if(!aboutButton.hasClass('is-active')){
+        $('.nav-btn.is-active').removeClass('is-active');
+        aboutButton.addClass('is-active');
       }
     }
     //at contacts
     else{
       //in contact section
-      if(!contactButton.hasClass('active')){
-        $('.nav-btn.active').removeClass('active');
-        contactButton.addClass('active');
+      if(!contactButton.hasClass('is-active')){
+        $('.nav-btn.is-active').removeClass('is-active');
+        contactButton.addClass('is-active');
       }
     }
     //change position of nav menu based on scrolling
@@ -64,9 +64,9 @@ $('document').ready(function(){
     var id = "#" + btn.attr('id').slice(4);
     e.preventDefault();
     btnList.each(function(){
-      $(this).removeClass('active');
+      $(this).removeClass('is-active');
     });
-    btn.toggleClass('active');
+    btn.toggleClass('is-active');
     $('html, body').animate({
             scrollTop: $(id).offset().top - 150
         }, 250);
@@ -74,17 +74,17 @@ $('document').ready(function(){
   //handler for hamburger-helper clicks
   $('#hamburger-helper').on('click', function(e){
     console.log("You clicked me!");
-    $('#nav-container').addClass('expanded');
+    $('#nav-container').addClass('is-expanded');
     e.preventDefault();
   });
   $('#hamburger-closer').on('click', function(e){
-    $('#nav-container').removeClass('expanded');
+    $('#nav-container').removeClass('is-expanded');
     e.preventDefault();
   });
   //handler for flip card clicks
   $('.flip-container').on('click', function(e){
     console.log('clicked on flip container');
-    $(this).children('.flipper').toggleClass('flip');
+    $(this).children('.flipper').toggleClass('is-fliped');
   });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){

@@ -10,6 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/theme.css">
         <script src="https://use.fontawesome.com/514b48d814.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -22,7 +23,7 @@
         </script>
     </head>
     <body>
-        <div class="container main">
+        <div class="container main" class="primary-theme">
             <header class="row" id="header">
                 <div id="logo" class="col-md-2">
                   <a href="https://www.udacity.com/" target="_blank"><img src="./images/udacity-logo.jpg"></a>
@@ -33,7 +34,7 @@
                 </div>
             </header>
             <div class="row">
-              <div id="nav-social" class="col-md-12 nav text-right">
+              <div id="nav-social" class="col-md-12 l-nav text-right">
                 <ul>  <!-- aria-describedby='github-name' -->
                   <li class="social-nav-btn"><a id='github' href="https://github.com/crhain" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
                   <li class="social-nav-btn"><a id='codepen' href="http://codepen.io/crhain/" target="_blank"><i class="fa fa-codepen fa-lg"></i></a></li>
@@ -44,19 +45,19 @@
 
             <div class="row bar" id="divider"></div>
 
-            <div id="nav-bar" class="nav">
+            <div id="nav-bar" class="l-nav navbar-theme">
               <div id='nav-container' class="row">
                 <div id="hamburger-helper"></div>
                 <div id="hamburger-closer">X</div>
                 <ul>
-                  <li id="btn-portfolio" class="basic-btn nav-btn active">Projects</li>
+                  <li id="btn-portfolio" class="basic-btn nav-btn is-active">Projects</li>
                   <li id="btn-about" class="basic-btn nav-btn">About</li>
                   <li id="btn-contact" class="basic-btn nav-btn">Contact</li>
                 </ul>
               </div>
             </div>
 
-            <div id="contents">
+            <div id="contents" class="primary-theme">
               <!--Portfolio Section -->
               <div id="portfolio">
                 <!--Featured Section -->
@@ -72,9 +73,9 @@
                       <div class="flip-container">
   	                    <div class="flipper">
                       		<div class="front">
-                      			<img src="./images/pomodoro.jpg" class="img-responsive img-shadowed flipcard">
+                      			<img src="./images/pomodoro.jpg" class="img-responsive img-shadowed is-flipcard">
                       		</div>
-                      		<div class="back img-shadowed flipcard">
+                      		<div class="back img-shadowed is-flipcard notecard-theme">
                       			<p>This is a simple pomodoro clock written in HTML/SCSS, JavaScript, and jQuery.  More stuff to fill out the card and see how the text formats.</p>
                       		</div>
                       	</div> <!-- end flip-container -->
@@ -87,9 +88,9 @@
                       <div class="flip-container">
   	                    <div class="flipper">
                       		<div class="front">
-                      			<img src="./images/quote.jpg" class="img-responsive img-shadowed flipcard">
+                      			<img src="./images/quote.jpg" class="img-responsive img-shadowed is-flipcard">
                       		</div>
-                      		<div class="back img-shadowed flipcard">
+                      		<div class="back img-shadowed is-flipcard notecard-theme">
                       			<p>This project uses HTML/CSS, JavaScript, jQuery, and AJAX calls.</p>
                       		</div>
                       	</div> <!-- end flip-container -->
@@ -102,9 +103,9 @@
                       <div class="flip-container">
   	                    <div class="flipper">
                       		<div class="front">
-                      			<img src="./images/calculator.jpg" class="img-responsive img-shadowed flipcard">
+                      			<img src="./images/calculator.jpg" class="img-responsive img-shadowed is-flipcard">
                       		</div>
-                      		<div class="back img-shadowed flipcard">
+                      		<div class="back img-shadowed is-flipcard notecard-theme">
                       			<p>I built this calculator using Javascript, jQuery, and HTML/CSS.</p>
                       		</div>
                       	</div> <!-- end flip-container -->
@@ -120,9 +121,9 @@
                       <div class="flip-container">
   	                    <div class="flipper">
                       		<div class="front">
-                      			<img src="./images/frogger.jpg" class="img-responsive img-shadowed flipcard">
+                      			<img src="./images/frogger.jpg" class="img-responsive img-shadowed is-flipcard">
                       		</div>
-                      		<div class="back img-shadowed flipcard">
+                      		<div class="back img-shadowed is-flipcard notecard-theme">
                       			<p>A classic arcade game of frogger made with html5 canvas and javascript. Based on engine provided by Udacity.</p>
                       		</div>
                       	</div> <!-- end flip-container -->
@@ -150,7 +151,7 @@
 
               <div class="row bar top-bar"></div>
               <!--About Section -->
-              <div id="about">
+              <div id="about" class="body-text">
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="medium-text">About</h2>
@@ -158,7 +159,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12">
-                    <p><img src="./bootstrap-prestructure_files/555x300" class="img-responsive img-shadowed">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
+                    <p class="small-text"><img src="./bootstrap-prestructure_files/555x300" class="img-responsive img-shadowed">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops</p>
                   </div>
                   <!--<div class="col-md-4"></div> -->
                 </div>
@@ -174,7 +175,7 @@
                   </div>
                 </div>
 
-                <form id="contact-form">
+                <form id="contact-form" class="body-text">
                   <label for="contact-name">Name</label>
                   <input type="text" id="contact-name" placeholder="Name" required=''>
                   <label for="contact-email">Email Address</label>
