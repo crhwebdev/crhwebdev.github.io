@@ -87,19 +87,9 @@ $('document').ready(function(){
   });
   //handler for flip card clicks
   $('.flip-container').on('click', function(e){
-    var flipper = $(this).children('.flipper');
-    var back = flipper.children('.back');
-    var backScrollHeight = back.prop('scrollHeight');
-    flipper.toggleClass('is-fliped');
-    if(back.css('height')){
-        back.removeAttr('style');
-    }
-    if(backScrollHeight > back.height()){
-      if(flipper.hasClass('is-fliped')){
-        back.height(backScrollHeight);
-        console.log(back.prop('scrollHeight'));
-      }
-    }
+    var card = $(this).children('.flipper');
+    card.toggleClass('is-fliped');
+    setCardBackHeightToScroll(card);
   });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){
@@ -150,16 +140,31 @@ $('document').ready(function(){
     e.preventDefault();
   });
 
-  //card flipper utility function
+  //card flipper utility functions
+  function setCardBackHeightToScroll(card){
+    var back = card.children('.back');
+    var backScrollHeight = back.prop('scrollHeight');
+    if(back.css('height')){
+        back.removeAttr('style');
+    }
+    if(backScrollHeight > back.height()){
+      if(card.hasClass('is-fliped')){
+        back.height(backScrollHeight);
+      }
+    }
+  }
+
   function flipCardsBackOver(){
     $('.flipper').each(function(index, card){
       if($(card).hasClass('is-fliped')){
+        setCardBackHeightToScroll($(card));
         $(card).toggleClass('is-fliped');
       }
+
     });
   }
 
-  function safeAnimationFrame(func){
+  function safeAnimationFrame(func){    
     if(window.requestAnimationFrame){
       window.requestAnimationFrame(func);
     }
