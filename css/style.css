@@ -1,6 +1,8 @@
 /*remove Udacity icon, adjust position on header text, and tweak position
   of featured items in portfolio */
 
+  @supports(transform: rotateY(180deg)){    
+  }
   @keyframes slidein{
     0%{
       transform: translate(100%, 0%);

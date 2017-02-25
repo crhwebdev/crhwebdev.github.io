@@ -15,6 +15,7 @@ $('document').ready(function(){
         aboutButton = $('#btn-about'),
         contactButton = $('#btn-contact');
 
+    safeAnimationFrame(flipCardsBackOver);
     //change active nav-menu button based on position in document
     //At projects
     if(currentPosition < aboutOffset){
@@ -56,10 +57,11 @@ $('document').ready(function(){
     1. flip features back over if they are in flipped position
     2. reset active nav bar button based on new position in document
   */
-  /*$( window ).resize(function() {
+  $( window ).resize(function() {
+    safeAnimationFrame(flipCardsBackOver);
     //$( "body" ).prepend( "<div>" + $( window ).width() + "</div>" );
     //console.log('My window width is: ' + $(window).width());
-  });*/
+  });
   //handler for nav button clicks
   $('.nav-btn').on('click', function(e){
     var btnList = $('.nav-btn');
@@ -147,5 +149,23 @@ $('document').ready(function(){
     }
     e.preventDefault();
   });
+
+  //card flipper utility function
+  function flipCardsBackOver(){
+    $('.flipper').each(function(index, card){
+      if($(card).hasClass('is-fliped')){
+        $(card).toggleClass('is-fliped');
+      }
+    });
+  }
+
+  function safeAnimationFrame(func){
+    if(window.requestAnimationFrame){
+      window.requestAnimationFrame(func);
+    }
+    else{
+      window.setTimeout(func, 16.6);
+    }
+  }
 
 });
