@@ -9,5 +9,3 @@ PORTFOLIO WEBSITE
 
 
 ### Browser Compatiblity:
-
-- notecard flip does not work in IE.

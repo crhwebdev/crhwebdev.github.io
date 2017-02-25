@@ -1,9 +1,7 @@
+//check to see if IE
+var clientIsIE = !!document.documentMode;
+
 $('document').ready(function(){
-  //handler for page scrolling
-  /*1. detach social menu as side bar
-    2. change nav menu to fixed placement so it stays on top
-    3. change active nav menu button based on position in document
-  */
   //handler for tracking scroll bar position
   $(window).on('scroll', function(e){
     var currentPosition = e.currentTarget.pageYOffset,
@@ -14,9 +12,7 @@ $('document').ready(function(){
         portfolioButton = $('#btn-portfolio'),
         aboutButton = $('#btn-about'),
         contactButton = $('#btn-contact');
-
     safeAnimationFrame(flipCardsBackOver);
-    //change active nav-menu button based on position in document
     //At projects
     if(currentPosition < aboutOffset){
         if(!portfolioButton.hasClass('is-active')){
@@ -88,8 +84,13 @@ $('document').ready(function(){
   //handler for flip card clicks
   $('.flip-container').on('click', function(e){
     var card = $(this).children('.flipper');
-    card.toggleClass('is-fliped');
-    setCardBackHeightToScroll(card);
+    if(clientIsIE){
+      card.children('div.back').toggleClass('is-front') /*hack for IE flip cards*/
+    }
+    else{
+      card.toggleClass('is-fliped');
+      setCardBackHeightToScroll(card);
+    }
   });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e){
@@ -102,11 +103,8 @@ $('document').ready(function(){
         fromEmail = contactEmailElement.val().replace(validate, ""),
         fromPhone = contactPhoneElement.val().replace(validate, ""),
         messageHTML = contactMessageElement.val().replace(validate, "");
-
-
     if(!fromEmail || !fromName || !messageHTML){
       //add red outlines to required areas that are blank
-
       if(contactNameElement.val() == ''){
         contactNameElement.addClass('red-outline');
       }
@@ -125,7 +123,6 @@ $('document').ready(function(){
       else{
         contactMessageElement.removeClass('red-outline');
       }
-
       alert('Please fill out all sections!');
     }
     else{
@@ -139,7 +136,6 @@ $('document').ready(function(){
     }
     e.preventDefault();
   });
-
   //card flipper utility functions
   function setCardBackHeightToScroll(card){
     var back = card.children('.back');
@@ -153,18 +149,18 @@ $('document').ready(function(){
       }
     }
   }
-
   function flipCardsBackOver(){
     $('.flipper').each(function(index, card){
-      if($(card).hasClass('is-fliped')){
-        setCardBackHeightToScroll($(card));
-        $(card).toggleClass('is-fliped');
+      if(!clientIsIE){
+        if($(card).hasClass('is-fliped')){
+          setCardBackHeightToScroll($(card));
+          $(card).toggleClass('is-fliped');
+        }
       }
 
     });
   }
-
-  function safeAnimationFrame(func){    
+  function safeAnimationFrame(func){
     if(window.requestAnimationFrame){
       window.requestAnimationFrame(func);
     }
@@ -172,5 +168,4 @@ $('document').ready(function(){
       window.setTimeout(func, 16.6);
     }
   }
-
 });

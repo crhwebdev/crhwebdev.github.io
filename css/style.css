@@ -1,8 +1,4 @@
-/*remove Udacity icon, adjust position on header text, and tweak position
-  of featured items in portfolio */
-
-  @supports(transform: rotateY(180deg)){    
-  }
+/*define animations*/
   @keyframes slidein{
     0%{
       transform: translate(100%, 0%);
@@ -23,12 +19,15 @@
       from {
           transform: rotate(0deg);
       }
-
       to{
           transform: rotate(360deg);
       }
   }
-
+.spin:hover{
+  animation-name: spin;
+  animation-duration: 5s;
+}
+/*basic document settings*/
 *{
   position: relative;
 }
@@ -41,10 +40,6 @@ body {
 img, embed, object, video {
   max-width: 100%;
 }
-.spin:hover{
-  animation-name: spin;
-  animation-duration: 5s;
-}
 /*header formating*/
 #header img{
   border: none;
@@ -53,15 +48,15 @@ img, embed, object, video {
 .header-align {
     margin-top: -0.25rem;
 }
-  #name {
-    overflow: hidden;
-  }
-  #name h3{
-    animation-name: slidein;
-    animation-duration: 2s;
-  }
-  #logo {
-  }
+#name {
+  overflow: hidden;
+}
+#name h3{
+  animation-name: slidein;
+  animation-duration: 5s;
+}
+#logo {
+}
 
 #nav-social{
 }
@@ -275,35 +270,21 @@ footer p{
   z-index: -1;
   opacity: 0;
 }
-
-
 /* flip card effect*/
 .flip-container {
 	perspective: 1000px;
   -webkit-perspective: 1000px;
-  /*transform-style: preserve-3d*/
+  transform-style: preserve-3d
 }
 	/* flip the pane*/
 	.is-fliped {
 		transform: rotateY(180deg);
 	}
-
-/*
-  .flip .back{
-      transform: rotateY(0deg);
-  }
-
-  .flip .front{
-    transform: rotateY(180deg);
-  }
-*/
 .flip-container, .front, .back {
 	width: 100%;/*320px;*/
   height: 190px;
   z-index: 5;
-
 }
-
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
@@ -313,36 +294,41 @@ footer p{
 .front, .back {
   backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
-  transition: height 0.6s ease;
-  /*transition: 0.6s;
-  transform-style: preserve-3d;*/
+  /*transition: height 0.6s ease;*/
+  transition: 0.6s;
   z-index: 5;
 	position: absolute;
 	top: 0;
 	left: 0;
-
 }
 /* front pane, placed above back */
 .front {
+  z-index: 6;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 /* back, initially hidden pane */
 .back {
+  display: inline-block;
 	transform: rotateY(180deg);
   overflow: hidden;
 }
-/*.back p{
 
-}*/
 .is-flipcard{
   cursor: pointer;
-
 }
 .is-flipcard:hover{
   box-shadow: 4px 4px 20px 2px black;
   transition: box-shadow 0.25s;
 }
+.is-front{
+  backface-visibility: visible;
+  transform: rotateY(0deg);
+  z-index: 10;
+  overflow: auto;
+}
+
+
 
 /*Responsive layout*/
 
