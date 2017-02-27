@@ -9,3 +9,9 @@ PORTFOLIO WEBSITE
 
 
 ### Browser Compatiblity:
+
+
+### Bugs
+
+- nav buttons not working properly on smaller screen sizes
+- improper resizing of flip cards : if card is larger size, is flipped, and browser window is minimized with icon so that card is smaller size, the flip function will not properly size the card.

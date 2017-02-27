@@ -21,7 +21,7 @@ $('document').ready(function(){
         }
     }
     //at about
-    else if(currentPosition === aboutOffset || currentPosition < contactOffset){
+    else if(currentPosition < contactOffset){
       //in about section
       if(!aboutButton.hasClass('is-active')){
         $('.nav-btn.is-active').removeClass('is-active');
