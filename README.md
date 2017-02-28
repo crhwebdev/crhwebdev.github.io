@@ -2,7 +2,7 @@ PORTFOLIO WEBSITE
 ======================================================================
 
 ### To Do:
-
+- add skills section
 - reset active nav button on screen resize.
 - set element sizing to em or rem so that elements can scale to increased text size
 

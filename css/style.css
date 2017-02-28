@@ -319,6 +319,7 @@ footer p{
 }
 .is-flipcard:hover{
   box-shadow: 4px 4px 20px 2px black;
+  -webkit-box-shadow: 4px 4px 20px 2px black;
   transition: box-shadow 0.25s;
 }
 .is-front{
