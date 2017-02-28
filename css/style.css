@@ -357,12 +357,6 @@ footer p{
     margin-top: 4.0em;
     line-height: 2.0;
   }*/
-  #about img{
-    float: none;
-  }
-  #about p{
-    float: none;
-  }
   #contact form input{
     width: 50%;
   }
@@ -427,7 +421,6 @@ footer p{
     width: 100%;/*156px;*/
     height: 100%;
     overflow: visible;
-
     /*top: 25px;*/
   }
   #nav-container.is-expanded .nav-btn{
@@ -451,6 +444,12 @@ footer p{
     opacity: 1.0;
     cursor: pointer;
     font-size: 2rem;
+  }
+  #about img{
+    float: none;
+  }
+  #about p{
+    float: none;
   }
   #contact form input{
     width: 75%;
