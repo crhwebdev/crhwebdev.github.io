@@ -316,8 +316,6 @@ footer p{
   overflow: auto;
 }
 
-
-
 /*Responsive layout*/
 
 /*fix for feature item sizing*/
@@ -340,10 +338,9 @@ footer p{
     height: 300px;
     margin: 0 auto;
   }
-  /*.back p{
-    margin-top: 4.0em;
-    line-height: 2.0;
-  }*/
+  .notecard-theme p{    
+    font-size: 2rem;    
+  }
   #contact form input{
     width: 50%;
   }
@@ -356,6 +353,7 @@ footer p{
 }
 /*make nav-bar buttons smaller*/
 @media screen and (max-width: 640px){
+  
   #nav-container{
     width: 458px;
   }
