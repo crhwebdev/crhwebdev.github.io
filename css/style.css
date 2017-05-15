@@ -204,16 +204,17 @@ footer p{
   line-height: 2.0;
   text-align: center;
   border: 2px solid black;
-  box-shadow: 2px 2px 10px 1px black, inset -1px -1px 10px 2px #453F34;
-  background-color: #AB8A44; /*#A57C35;*/
+  /*box-shadow: 2px 2px 10px 1px black, inset -1px -1px 10px 2px #453F34;*/
+  background-color: #BB7A25;/*#96AABF;/*#AB8A44; /*#A57C35;*/
   color: white;
-  font-size: 2rem;
+  font-size: 2rem;    
 }
 .basic-btn:hover{
-  background-color: #765F36;
+  background-color: #D7943C;/*#765F36;*/
 }
 .basic-btn:active{
-  box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;
+  background-color: #E2AB63;
+  /*box-shadow: inset -1px -1px 5px 2px #A1691F;*/
 }
 .social-nav-btn{
   width: 40px;
@@ -249,8 +250,8 @@ footer p{
   color: white;*/
 }
 .nav-btn.is-active{
-  background-color: #765F36;
-  box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;
+  background-color: #E2AB63;/*#765F36;*/
+  /*box-shadow: 1px 1px 5px 1px black, inset -2px -2px 10px 2px #453F34;*/
 }
 #hamburger-helper{
   position: absolute;

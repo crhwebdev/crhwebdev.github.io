@@ -4,7 +4,7 @@
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    color: #AB8A44;/*#747704;*/
+    color: #0B1C2C; /* #AB8A44;/*#747704;*/
 }
 
 .tiny-text{
@@ -23,7 +23,7 @@ body {
   font-weight: 100;
 }
 .light-text {
-  color: #bcbbbb;
+  color: #B9C1C9;/*#bcbbbb;*/
 }
 
 /*background styles*/
@@ -76,10 +76,10 @@ body {
 .project-link {
     text-decoration: none;
     font-weight: 300;
-    color: #747704
+    color: #677079;/*#747704;*/
 }
 .project-link:hover {
     text-decoration: none;
     font-weight: 300;
-    color: purple;
+    color: #0B1C2C;
 }
