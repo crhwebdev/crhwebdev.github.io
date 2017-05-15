@@ -1,6 +1,12 @@
 /*this file defines font type, sizes, colors; backgrounds; and button styling*/
 
 /*font styles*/
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #AB8A44;/*#747704;*/
+}
+
 .tiny-text{
   font-size: 1.6rem;
 }

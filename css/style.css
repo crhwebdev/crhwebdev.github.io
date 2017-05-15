@@ -31,11 +31,7 @@
 *{
   position: relative;
 }
-body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    color: #AB8A44;/*#747704;*/
-}
+
 /* to ensure these elements do not overflow their containers */
 img, embed, object, video {
   max-width: 100%;
