@@ -1,2 +1,5 @@
 #ignore adobe photoshop files
 images/psd
+
+#ignore design documents
+docs/design
