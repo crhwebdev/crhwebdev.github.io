@@ -9,8 +9,8 @@
         <title>Portfolio</title>
         <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/style.css">       
         <script src="https://use.fontawesome.com/514b48d814.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -24,23 +24,21 @@
     </head>
     <body>
         <div class="container main" class="primary-theme">
-            <header class="row" id="header">
-                <div id="logo" class="col-md-2">
-                  <a href="https://www.udacity.com/" target="_blank"><img src="./images/udacity-logo.jpg" class="spin"></a>
-                </div>
-                <div id="name" class="col-md-10 text-right text-uppercase">
+            <header class="row" id="header">             
+                <div id="name" class="col-md-8 text-left text-uppercase">
                     <h1 class="big-text thin-text">Carlton Hain</h1>
                     <h3 class="small-text header-align">Web Developer</h3>
                 </div>
+                <div id="nav-social" class="col-md-4 l-nav text-right">
+                  <ul>  <!-- aria-describedby='github-name' -->
+                    <li class="social-nav-btn"><a id='github' href="https://github.com/crhain" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
+                    <li class="social-nav-btn"><a id='codepen' href="http://codepen.io/crhain/" target="_blank"><i class="fa fa-codepen fa-lg"></i></a></li>
+                    <li class="social-nav-btn"><a id='linkedin' href="https://www.linkedin.com/in/carl-hain-75467813" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                  </ul>
+              </div>
             </header>
             <div class="row">
-              <div id="nav-social" class="col-md-12 l-nav text-right">
-                <ul>  <!-- aria-describedby='github-name' -->
-                  <li class="social-nav-btn"><a id='github' href="https://github.com/crhain" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
-                  <li class="social-nav-btn"><a id='codepen' href="http://codepen.io/crhain/" target="_blank"><i class="fa fa-codepen fa-lg"></i></a></li>
-                  <li class="social-nav-btn"><a id='linkedin' href="https://www.linkedin.com/in/carl-hain-75467813" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a></li>
-                </ul>
-              </div>
+              
             </div>
 
             <div class="row bar" id="divider"></div>
