@@ -123,7 +123,7 @@ $('document').ready(function(){
       else{
         contactMessageElement.removeClass('red-outline');
       }
-      alert('Please fill out all sections!');
+      /*alert('Please fill out all sections!');*/
     }
     else{
       messageHTML += "<br> Phone:" + contactPhoneElement.val();
@@ -132,7 +132,7 @@ $('document').ready(function(){
       emailjs.send("default_service", "template_pDJFeKtF", {"from_email":fromEmail,"from_name": fromName,"message_html": messageHTML});
       $('#contact-form>input, #contact-form>textarea').val('');
       $('#contact-form>input, #contact-form>textarea').removeClass('red-outline');
-      alert('Thank you!');
+      /*alert('Thank you!');*/
     }
     e.preventDefault();
   });

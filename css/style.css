@@ -176,7 +176,8 @@ img, embed, object, video {
   outline: none;
 }
 #contact form input.red-outline, #contact form textarea.red-outline{
-  border-bottom: 2px solid red;
+  /*border-bottom: 2px solid red;*/
+  background-color: #F8DEDC;
 }
 
 /*footer formating*/
