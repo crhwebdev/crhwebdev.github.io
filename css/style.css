@@ -158,16 +158,16 @@ footer p{
   display: inline-block;
   line-height: 2.0;
   text-align: center;    
-  background-color: #BB7A25;/*#96AABF;/*#AB8A44; /*#A57C35;*/
+  background-color: #C7CADB;/* #BB7A25;/*#96AABF;/*#AB8A44; /*#A57C35;*/
   border: 1px solid black;
-  color: white;
+  color: #0B1C2C;
   font-size: 2rem;    
 }
 .basic-btn:hover{
-  background-color: #D7943C;/*#765F36;*/
+  background-color: #D9DBE7;/*#D7943C;/*#765F36;*/
 }
 .basic-btn:active{
-  background-color: #E2AB63;
+  background-color: #D9DBE7;/*#E2AB63;*/
   /*box-shadow: inset -1px -1px 5px 2px #A1691F;*/
 }
 .social-nav-btn{
@@ -200,7 +200,7 @@ footer p{
   /*text-decoration: none;*/
 }
 .nav-btn.is-active{
-  background-color: #E2AB63;/*#765F36;*/  
+  background-color: #E3E4EC;/*#E2AB63;/*#765F36;*/  
 }
 #hamburger-helper{
   position: absolute;
