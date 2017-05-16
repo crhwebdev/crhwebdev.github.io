@@ -329,6 +329,9 @@ footer p{
   }
   .flip-container, .front, .back {
     height: 43vmin;
+  }
+  .back p{
+    font-size: 1.5rem;
   }  
   #nav-container{
     width: 100%;
