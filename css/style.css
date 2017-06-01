@@ -91,6 +91,7 @@ img, embed, object, video {
 }
 
 #about img{
+  height: 250px;
   margin-bottom: 20px;
   margin-right: 20px;
   float: left;
