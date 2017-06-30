@@ -60,6 +60,7 @@ $('document').ready(function(){
   });
   //handler for nav button clicks
   $('.nav-btn').on('click', function(e){
+    //console.log(e);
     var btnList = $('.nav-btn');
     var btn = $(this);
     var id = "#" + btn.attr('id').slice(4);
