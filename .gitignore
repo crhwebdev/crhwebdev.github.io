@@ -3,3 +3,6 @@ images/psd
 
 #ignore design documents
 docs/design
+
+#ignore node_modules
+node_modules
