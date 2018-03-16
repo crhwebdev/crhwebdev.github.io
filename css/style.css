@@ -17,6 +17,9 @@ img, embed, object, video {
 body {
   box-sizing: border-box; }
 
+.container {
+  border: 2px solid black; }
+
 .u-large-bottom-margin {
   margin-bottom: 100px; }
 
@@ -84,6 +87,14 @@ body {
   box-shadow: 0 2px 1.5rem rgba(11, 28, 44, 0.2);
   overflow: hidden;
   border-radius: .5rem; }
+  #nav-bar.is-fixed {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    /*360px;*/
+    padding-top: 2px;
+    padding-bottom: 2px; }
 
 #nav-container {
   position: relative;
@@ -93,15 +104,6 @@ body {
   padding-bottom: .5rem;
   left: 0px;
   opacity: .8; }
-
-#nav-bar.is-fixed {
-  position: fixed;
-  z-index: 10;
-  top: 0px;
-  left: 0px;
-  /*360px;*/
-  padding-top: 2px;
-  padding-bottom: 2px; }
 
 #portfolio {
   padding: 2rem; }

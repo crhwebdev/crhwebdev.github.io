@@ -19,6 +19,16 @@
     box-shadow: 0 2px 1.5rem rgba($color-black, .2);
     overflow: hidden;  
     border-radius: .5rem;
+    
+    &.is-fixed {
+      position: fixed;
+      z-index: 10;
+      top: 0px;
+      left: 0px;/*360px;*/
+      padding-top: 2px;
+      padding-bottom: 2px;     
+    }
+
   }
   #nav-container{
       position: relative;
@@ -29,11 +39,4 @@
       left: 0px;  
       opacity: .8;  
   }
-  #nav-bar.is-fixed{
-    position: fixed;
-    z-index: 10;
-    top: 0px;
-    left: 0px;/*360px;*/
-    padding-top: 2px;
-    padding-bottom: 2px;  
-  }
+  
