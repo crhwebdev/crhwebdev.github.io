@@ -1,0 +1,39 @@
+/*nav bar formating*/
+.l-nav ul {
+    display: inline-block;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+  }
+  .l-nav ul li{
+    display: inline-block;
+  }
+  .l-nav ul li:last-child{
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+  #nav-bar{
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .2);
+    overflow: hidden;  
+    border-radius: 5px;
+  }
+  #nav-container{
+      position: relative;
+      width: 610px;
+      margin: 0 auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      left: 0px;  
+      opacity: .8;  
+  }
+  #nav-bar.is-fixed{
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0px;/*360px;*/
+    padding-top: 2px;
+    padding-bottom: 2px;  
+  }

@@ -1,8 +1,9 @@
 #ignore adobe photoshop files
 images/psd
 
-#ignore design documents
-docs/design
 
 #ignore node_modules
 node_modules
+
+#ignore private documents
+docs/private

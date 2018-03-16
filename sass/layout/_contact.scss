@@ -1,0 +1,42 @@
+/*Contact formating*/
+#contact {
+    position: relative;
+    /*border: 2px solid black;*/
+    padding: 20px;
+  }
+  #contact h2{
+    margin-bottom: 30px;
+  }
+  #contact form label{
+    opacity: 0;
+    z-index: -1;
+  }
+  #contact form input{
+    display: block;
+    width: 25%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  #contact form textarea{
+    display: block;
+    width: 50%;
+    margin-bottom: 20px;
+    resize: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    outline: none;
+  }
+  #contact-submit{
+    width: 20%;
+    outline: none;
+  }
+  #contact form input.red-outline, #contact form textarea.red-outline{
+    /*border-bottom: 2px solid red;*/
+    background-color: #F8DEDC;
+  }

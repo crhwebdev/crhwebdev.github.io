@@ -1,0 +1,9 @@
+/*basic document settings*/
+* {
+    position: relative;
+}
+  
+  /* to ensure these elements do not overflow their containers */
+img, embed, object, video {
+    max-width: 100%;
+}

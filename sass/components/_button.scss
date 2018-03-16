@@ -1,0 +1,52 @@
+/*Buttons and more buttons!*/
+.basic-btn{
+    display: inline-block;
+    line-height: 2.0;
+    text-align: center;    
+    background-color: #C7CADB;/* #BB7A25;/*#96AABF;/*#AB8A44; /*#A57C35;*/
+    border: 2px solid black;
+    color: #0B1C2C;
+    font-size: 2rem;
+    border-radius: 5px;
+    
+  }
+  .basic-btn:hover{
+    background-color: #D9DBE7;/*#D7943C;/*#765F36;*/
+  }
+  .basic-btn:active{
+    background-color: #D9DBE7;/*#E2AB63;*/
+    /* box-shadow: 0px 0px 0px 0px black; */
+    /*box-shadow: inset -1px -1px 5px 2px #A1691F;*/
+  }
+  .social-nav-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .4); /*, -1px -1px 10px 1px black;*/
+    outline: none;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .social-nav-btn:last-child{
+    margin-right: 0;
+  }
+  .social-nav-btn a{
+    color: #35516E;
+    outline: none;
+  }
+  .social-nav-btn a i{
+    top: 15%;
+  }
+  .social-nav-btn a:hover{
+    opacity: 0.5;
+  }
+  .nav-btn{
+    width: 200px;
+    line-height: 2.0;
+    cursor: pointer;
+    /*text-decoration: none;*/
+  }
+  .nav-btn.is-active{
+    background-color: #E3E4EC;/*#E2AB63;/*#765F36;*/  
+  }

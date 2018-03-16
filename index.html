@@ -23,7 +23,8 @@
         </script>
     </head>
     <body>
-        <div class="container main" class="primary-theme">
+        <div class="container main primary-theme">
+            <!-- header element -->
             <header class="row" id="header">             
                 <div id="name" class="col-md-8 text-left ">
                     <h1 class="big-text thin-text text-uppercase">Carlton Hain</h1>
@@ -36,14 +37,12 @@
                     <li class="social-nav-btn"><a id='linkedin' href="https://www.linkedin.com/in/carl-hain-75467813" target="_blank" rel="noopener"><i class="fa fa-linkedin fa-lg"></i></a></li>
                   </ul>
               </div>
-            </header>
-            <div class="row">
-              
-            </div>
+            </header>            
 
-            <div class="row bar" id="divider"></div>
+            <div id="divider"></div> <!-- still need for nav bar fixed to work -->
 
-            <div id="nav-bar" class="l-nav navbar-theme">
+            <!--Nav bar element -->
+            <div id="nav-bar" class="l-nav navbar-theme u-large-bottom-margin">
               <div id='nav-container' class="row">
                 <div id="hamburger-helper"></div>
                 <div id="hamburger-closer">X</div>
@@ -55,9 +54,11 @@
               </div>
             </div>
 
+            
             <div id="contents" class="primary-theme">
+              
               <!--Portfolio Section -->
-              <div id="portfolio">
+              <div id="portfolio" class="u-large-bottom-margin">
                 <!--Featured Section -->
                 <div id="featured">
                   <div class="row">
@@ -65,7 +66,7 @@
                           <h2 class="medium-text">Featured Projects</h2>
                       </div>
                   </div>
-                  <div class="row feature-row"> <!--Featured Row 1 -->
+                  <div class="row u-small-bottom-margin"> <!--Featured Row 1 -->
                     <!-- Vote Project -->
                     <div class="col-md-4 feature-item">
                       <div class="flip-container">
@@ -127,7 +128,7 @@
                     </div>
                   </div> <!--end of row 1 -->
 
-                  <div class="row feature-row"> <!-- featured Row 2 -->
+                  <div class="row u-small-bottom-margin"> <!-- featured Row 2 -->
                     <!-- Pmodoro Project -->
                     <div class="col-md-4 feature-item">
                       <div class="flip-container">
@@ -152,9 +153,8 @@
 
               </div> <!--end of portfolio section -->
 
-              <div class="row bar top-bar"></div>
               <!--About Section -->
-              <div id="about" class="body-text">
+              <div id="about" class="body-text u-large-bottom-margin">
                 <div class="row">
                     <div class="col-md-12">
                         <h2 class="medium-text">About</h2>
@@ -168,11 +168,10 @@
                   <!--<div class="col-md-4"></div> -->
                 </div>
               </div> <!--end of about section-->
-
-              <div class="row bar"></div>
+            
 
               <!--Contact Section -->
-              <div id="contact">
+              <div id="contact" class="u-large-bottom-margin">
                 <div class="row">
                   <div class="col-md-12">
                     <h2 class="medium-text">Contact</h2>
@@ -202,23 +201,7 @@
       </div> <!--end of container-->
 
 
-        <!-- Modal - Pomodoro -->
-        <div class="modal fade" id="pomodoro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title text-center" id="myModalLabel">Pomodoro clock</h4>
-              </div>
-              <div class="modal-body">
-                <img class="img-responsive" src="./bootstrap-prestructure_files/555x300">
-                <p class="text-center">This is a simple pomodoro clock written in HTML/SCSS, JavaScript, and jQuery. See the source code <a href="http://codepen.io/crhain/pen/gwOmow" target="_blank">here</a></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+  
 
     </body>
 
