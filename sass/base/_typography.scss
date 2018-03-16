@@ -1,5 +1,31 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: $color-black; /* #AB8A44;/*#747704;*/
+}
 
-.body-text {
-    font-size: 20px;
+.tiny-text{
+    font-size: 1.6rem;
+}
+
+.body-text{
+    font-size: 2rem;
     line-height: 1.5;
 }
+
+.medium-text {
+      font-size: 3rem;
+}
+
+.big-text {
+    font-size: 6rem;
+}
+
+.thin-text {
+    font-weight: 100;
+}
+
+.light-text {
+    color: $color-light-gray;/*#bcbbbb;*/
+}
+

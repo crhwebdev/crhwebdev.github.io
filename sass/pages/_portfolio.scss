@@ -8,7 +8,7 @@
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 35px;
+    height: 3.5rem;
     opacity: 0;
     text-align: center;
   }
@@ -25,7 +25,7 @@
   @media screen and (max-width: 1198px){
     .flip-container, .front, .back {
       width: 100%;/*320px;*/
-      height: 150px;/*150px;*/
+      height: 15rem;/*150px;*/
     }
   }
   @media screen and (max-width: 992px){  
@@ -33,8 +33,8 @@
       top: 0px; 
     }
     .flip-container, .front, .back {
-      width: 555px;/*320px;*/
-      height: 300px;
+      width: 55.5rem;/*320px;*/
+      height: 30rem;
       margin: 0 auto;
     }
     .notecard-theme p{    
@@ -53,16 +53,16 @@
   /*make nav-bar buttons smaller*/
   @media screen and (max-width: 640px){  
     #nav-container{
-      width: 458px;
+      width: 45.8rem;
     }
     .nav-btn{
-      width: 150px;
+      width: 15rem;
     }
   }
   @media screen and (max-width: 624px){
     .flip-container, .front, .back {
       width: 100%;
-      height: 300px;/*45.5vmin;*/
+      height: 30rem;/*45.5vmin;*/
       margin: 0 auto;
     }
   }
@@ -82,7 +82,7 @@
     }
     .nav-btn{
       width: 32.66%;
-      height: 25px;
+      height: 2.5rem;
       font-size: 1rem;    
     }
     #nav-bar.is-fixed{   

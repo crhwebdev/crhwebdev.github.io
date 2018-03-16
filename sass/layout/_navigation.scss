@@ -16,16 +16,16 @@
   #nav-bar{
     width: 100%;
     border: 2px solid black;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 1.5rem rgba($color-black, .2);
     overflow: hidden;  
-    border-radius: 5px;
+    border-radius: .5rem;
   }
   #nav-container{
       position: relative;
-      width: 610px;
+      width: 61rem;
       margin: 0 auto;
-      padding-top: 5px;
-      padding-bottom: 5px;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
       left: 0px;  
       opacity: .8;  
   }
