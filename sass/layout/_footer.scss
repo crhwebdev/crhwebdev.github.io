@@ -1,8 +1,10 @@
   /*footer formating*/
   footer{
     margin: 2rem auto;
+
+    p {
+      margin: 0 30%;
+      text-align: center;
+    }
   }
-  footer p{
-    margin: 0 30%;
-    text-align: center;
-  }
+  
