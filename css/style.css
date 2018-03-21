@@ -175,7 +175,7 @@ body {
 
 /*footer formating*/
 footer {
-  margin: 0 auto; }
+  margin: 2rem auto; }
 
 footer p {
   margin: 0 30%;
@@ -373,7 +373,7 @@ footer p {
 
 @media screen and (max-width: 992px) {
   #nav-social {
-    top: 0px; }
+    top: -1rem; }
   .flip-container, .front, .back {
     width: 55.5rem;
     /*320px;*/
