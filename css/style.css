@@ -17,17 +17,14 @@ img, embed, object, video {
 body {
   box-sizing: border-box; }
 
-.container {
-  border: 2px solid black; }
-
 .u-large-bottom-margin {
-  margin-bottom: 100px; }
+  margin-bottom: 15rem; }
 
 .u-medium-bottom-margin {
-  margin-bottom: 50px; }
+  margin-bottom: 10rem; }
 
 .u-small-bottom-margin {
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
 
 body {
   font-family: 'Lato', sans-serif;
