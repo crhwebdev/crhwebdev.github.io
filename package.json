@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crhain/crhain.github.io.git"
+    "url": "git+https://github.com/crhwebdev/crhwebdev.github.io.git"
   },
   "author": "Carl Hain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/crhain/crhain.github.io/issues"
+    "url": "https://github.com/crhwebdev/crhwebdev.github.io.git/issues"
   },
-  "homepage": "https://github.com/crhain/crhain.github.io#readme",
+  "homepage": "https://github.com/crhwebdev/crhwebdev.github.io.git#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "concat": "^1.0.3",
