@@ -1,96 +1,104 @@
-  /*Portfolio formating*/
-   
-  
+/*Portfolio formating*/
 
-  
-  
-  #hamburger-helper{
-    position: absolute;
-    z-index: -1;
+#hamburger-helper {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 3.5rem;
+  opacity: 0;
+  text-align: center;
+}
+#hamburger-closer {
+  display: none;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+}
+
+/*Responsive layout*/
+
+/*fix for feature item sizing*/
+@media screen and (max-width: 1198px) {
+  .flip-container,
+  .front,
+  .back,
+  .flip-img {
+    width: 100%; /*320px;*/
+    height: 15rem; /*150px;*/
+  }
+}
+@media screen and (max-width: 992px) {
+  #nav-social {
+    top: -1rem;
+  }
+  .flip-container,
+  .front,
+  .back,
+  .flip-img {
+    width: 55.5rem; /*320px;*/
+    height: 30rem;
+    margin: 0 auto;
+  }
+  .notecard-theme p {
+    font-size: 2rem;
+  }
+  #contact form input {
+    width: 50%;
+  }
+  #contact form textarea {
+    width: 75%;
+  }
+  #contact-submit {
+    width: 35%;
+  }
+}
+/*make nav-bar buttons smaller*/
+@media screen and (max-width: 640px) {
+  #nav-container {
+    width: 45.8rem;
+  }
+  .nav-btn {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 624px) {
+  .flip-container,
+  .front,
+  .back,
+  .flip-img {
     width: 100%;
-    height: 3.5rem;
-    opacity: 0;
-    text-align: center;
+    height: 30rem; /*45.5vmin;*/
+    margin: 0 auto;
   }
-  #hamburger-closer{
-    display: none;
-    position: relative;
-    z-index: -1;
-    opacity: 0;
+}
+/* buttons are now stacked, adjust centering and create hamburger menu */
+@media screen and (max-width: 496px) {
+  .big-text {
+    font-size: 4rem;
   }
-   
-  /*Responsive layout*/
-  
-  /*fix for feature item sizing*/
-  @media screen and (max-width: 1198px){
-    .flip-container, .front, .back {
-      width: 100%;/*320px;*/
-      height: 15rem;/*150px;*/
-    }
+  .flip-container,
+  .front,
+  .back,
+  .flip-img {
+    height: 43vmin;
   }
-  @media screen and (max-width: 992px){  
-    #nav-social{
-      top: -1rem; 
-    }
-    .flip-container, .front, .back {
-      width: 55.5rem;/*320px;*/
-      height: 30rem;
-      margin: 0 auto;
-    }
-    .notecard-theme p{    
-      font-size: 2rem;    
-    }
-    #contact form input{
-      width: 50%;
-    }
-    #contact form textarea{
-      width: 75%;
-    }
-    #contact-submit{
-      width: 35%;
-    }
+  .back p {
+    font-size: 1.5rem;
   }
-  /*make nav-bar buttons smaller*/
-  @media screen and (max-width: 640px){  
-    #nav-container{
-      width: 45.8rem;
-    }
-    .nav-btn{
-      width: 15rem;
-    }
+  #nav-container {
+    width: 100%;
   }
-  @media screen and (max-width: 624px){
-    .flip-container, .front, .back {
-      width: 100%;
-      height: 30rem;/*45.5vmin;*/
-      margin: 0 auto;
-    }
+  .nav-btn {
+    width: 32.66%;
+    height: 2.5rem;
+    font-size: 1rem;
   }
-  /* buttons are now stacked, adjust centering and create hamburger menu */
-  @media screen and (max-width: 496px){
-    .big-text{
-      font-size: 4rem;
-    }
-    .flip-container, .front, .back {
-      height: 43vmin;
-    }
-    .back p{
-      font-size: 1.5rem;
-    }  
-    #nav-container{
-      width: 100%;
-    }
-    .nav-btn{
-      width: 32.66%;
-      height: 2.5rem;
-      font-size: 1rem;    
-    }
-    #nav-bar.is-fixed{   
+  #nav-bar.is-fixed {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin: 0px;  
+    margin: 0px;
   }
-    /*.nav-btn{
+  /*.nav-btn{
       width: 50px;
       height: 2px;
       overflow: hidden;
@@ -138,24 +146,23 @@
       font-size: 2rem;
       text-align: center;    
     }*/
-    #about img{
-      float: none;
-    }
-    #about p{
-      float: none;
-    }
-    #contact form input{
-      width: 75%;
-    }
-    #contact form textarea{
-      width: 100%;
-    }
-    #contact-submit{
-      width: 50%;
-    }
+  #about img {
+    float: none;
   }
-  
-  .scrollable {
-    overflow-y: scroll;
+  #about p {
+    float: none;
   }
-  
+  #contact form input {
+    width: 75%;
+  }
+  #contact form textarea {
+    width: 100%;
+  }
+  #contact-submit {
+    width: 50%;
+  }
+}
+
+.scrollable {
+  overflow-y: scroll;
+}

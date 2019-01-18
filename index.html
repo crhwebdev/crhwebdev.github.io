@@ -1,276 +1,369 @@
 <!DOCTYPE html>
 <!-- saved from url=(0097)https://storage.googleapis.com/supplemental_media/udacityu/2730818600/bootstrap-prestructure.html -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">        
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-        <title>Carlton Hain - Web Developer - Portfolio</title>
-        <meta name="description" content="I am a MERN (MongoDb, Express, React, NodeJs) stack web developer working in the Chicago area.">
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">       
-        <script src="https://use.fontawesome.com/514b48d814.js"></script>
-        <script
-          src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"
-        ></script>
-        <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>         -->
-    </head>
-    <body class="container main primary-theme">     
-        <!-- <div class="container main primary-theme u-small-bottom-margin"> -->
-            <!-- header element -->
-            <header class="row" id="header">             
-                <div id="name" class="col-md-8 text-left ">
-                    <h1 class="big-text thin-text text-uppercase">Carlton Hain</h1>
-                    <h3 class="small-text header-align text-uppercase">Web Developer</h3>
-                </div>
-                <div id="nav-social" class="col-md-4 l-social-nav text-right">
-                  <ul>  <!-- aria-describedby='github-name' -->
-                    <li class="social-nav-btn">
-                      <a id='github' href="https://github.com/crhain" target="_blank" rel="noopener">
-                        <i class="fa fa-github fa-lg"></i>
-                      </a>
-                    </li>
-                    <li class="social-nav-btn">
-                      <a id='codepen' href="http://codepen.io/crhain/" target="_blank" rel="noopener">
-                        <i class="fa fa-codepen fa-lg"></i>
-                      </a>
-                    </li>
-                    <li class="social-nav-btn">
-                      <a id='linkedin' href="https://www.linkedin.com/in/carl-hain-75467813" target="_blank" rel="noopener">
-                        <i class="fa fa-linkedin fa-lg"></i>
-                      </a>
-                    </li>
-                  </ul>
-              </div>
-            </header>            
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Carlton Hain - Web Developer - Portfolio</title>
+    <meta
+      name="description"
+      content="I am a MERN (MongoDb, Express, React, NodeJs) stack web developer working in the Chicago area."
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://use.fontawesome.com/514b48d814.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>         -->
+  </head>
+  <body class="container main primary-theme">
+    <!-- <div class="container main primary-theme u-small-bottom-margin"> -->
+    <!-- header element -->
+    <header class="row" id="header">
+      <div id="name" class="col-md-8 text-left ">
+        <h1 class="big-text thin-text text-uppercase">Carlton Hain</h1>
+        <h3 class="small-text header-align text-uppercase">Web Developer</h3>
+      </div>
+      <div id="nav-social" class="col-md-4 l-social-nav text-right">
+        <ul>
+          <!-- aria-describedby='github-name' -->
+          <li class="social-nav-btn">
+            <a
+              id="github"
+              href="https://github.com/crhain"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-github fa-lg"></i>
+            </a>
+          </li>
+          <li class="social-nav-btn">
+            <a
+              id="codepen"
+              href="http://codepen.io/crhain/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-codepen fa-lg"></i>
+            </a>
+          </li>
+          <li class="social-nav-btn">
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/in/carl-hain-75467813"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-linkedin fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-            <div id="divider"></div> <!-- still need for nav bar fixed to work -->
+    <div id="divider"></div>
+    <!-- still need for nav bar fixed to work -->
 
-            <!--Nav bar element -->
-            <div id="nav-bar" class="l-nav navbar-theme u-medium-bottom-margin">
-              <div id='nav-container' class="l-nav__container row">
-                <div id="hamburger-helper"></div>
-                <div id="hamburger-closer">X</div>
-                <ul>
-                  <li id="btn-portfolio" class="basic-btn nav-btn is-active">Projects</li>
-                  <li id="btn-about" class="basic-btn nav-btn">About</li>
-                  <li id="btn-contact" class="basic-btn nav-btn">Contact</li>
-                </ul>
-              </div>
-            </div>
+    <!--Nav bar element -->
+    <div id="nav-bar" class="l-nav navbar-theme u-medium-bottom-margin">
+      <div id="nav-container" class="l-nav__container row">
+        <div id="hamburger-helper"></div>
+        <div id="hamburger-closer">X</div>
+        <ul>
+          <li id="btn-portfolio" class="basic-btn nav-btn is-active">
+            Projects
+          </li>
+          <li id="btn-about" class="basic-btn nav-btn">About</li>
+          <li id="btn-contact" class="basic-btn nav-btn">Contact</li>
+        </ul>
+      </div>
+    </div>
 
-            
-            <!-- <div id="contents" class="primary-theme"> -->
-              
-              <!--Portfolio Section -->
-              <div id="portfolio" class="u-large-bottom-margin">
-                <!--Featured Section -->
-                <div id="featured">
-                  <div class="section-heading u-medium-bottom-margin">
-                      <h2 class="medium-text text-uppercase">Featured Projects</h2>
-                  </div>                                        
-                  <!-- <div class="row">
+    <!-- <div id="contents" class="primary-theme"> -->
+
+    <!--Portfolio Section -->
+    <div id="portfolio" class="u-large-bottom-margin">
+      <!--Featured Section -->
+      <div id="featured">
+        <div class="section-heading u-medium-bottom-margin">
+          <h2 class="medium-text text-uppercase">Featured Projects</h2>
+        </div>
+        <!-- <div class="row">
                       <div class="col-md-12">
                           <h2 class="medium-text text-uppercase">Featured Projects</h2>
                       </div>
                   </div> -->
-                  <div class="row u-small-bottom-margin"> <!--Featured Row 1 -->
-                    <!-- Vote Project -->
-                    <div class="col-md-4 feature-item">
-                      <div class="flip-container">
-  	                    <div class="flipper">
-                      		<div class="front">
-                            <img 
-                              src="./images/vote-thumb.jpg" 
-                              class="img-responsive img-shadowed is-flipcard"
-                              alt="Image of voteing application"
-                            >
-                      		</div>
-                      		<div class="back img-shadowed is-flipcard notecard-theme">
-                      			<p>
-                              This polling application was created with Node.js, Express, and MongoDB for a freeCodeCamp project. 
-                              It allows users to create and vote on opinion polls.
-                            </p>
-                      		</div>
-                      	</div> <!-- end flip-container -->
-                      </div>
-                        <h3 class="medium-text text-uppercase text-center">Vote</h3>
-                        <p class="text-center tiny-text">
-                          <a 
-                            class="project-link" 
-                            href="https://crh-voting-app.herokuapp.com/" 
-                            target="_blank" 
-                            rel="noopener">
-                            Demo
-                          </a> 
-                            | 
-                          <a class="project-link" href="https://github.com/crhwebdev/fcc-voting-app" target="_blank" rel="noopener">
-                            Source
-                          </a>
-                        </p>
-                    </div>
-                    <!-- Simon Project -->
-                    <div class="col-md-4 feature-item">
-                      <div class="flip-container">
-  	                    <div class="flipper">
-                      		<div class="front">
-                            <img 
-                              src="./images/simon.jpg" 
-                              class="img-responsive img-shadowed is-flipcard"
-                              alt="Image of simon application"
-                            >
-                      		</div>
-                      		<div class="back img-shadowed is-flipcard notecard-theme">
-                      			<p>A classic game from the late 1970s reimagined for the Web using React.</p>
-                      		</div>
-                      	</div> <!-- end flip-container -->
-                      </div>
-                        <h3 class="medium-text text-uppercase text-center">Simon</h3>
-                        <p class="text-center tiny-text">
-                          <a class="project-link" href="http://carltonhain.com/fcc-simon/" target="_blank" rel="noopener">
-                            Demo
-                          </a> 
-                            | 
-                          <a class="project-link" href="https://github.com/crhwebdev/fcc-simon" target="_blank" rel="noopener">
-                            Source
-                          </a>
-                        </p>
-                    </div>                                        
-                    <!-- Calculator Project -->
-                    <div class="col-md-4 feature-item">
-                      <div class="flip-container">
-  	                    <div class="flipper">
-                      		<div class="front">
-                            <img 
-                              src="./images/calculator.jpg" 
-                              class="img-responsive img-shadowed is-flipcard"
-                              alt="Image of calculator application"
-                            >
-                      		</div>
-                      		<div class="back img-shadowed is-flipcard notecard-theme">
-                      			<p>
-                              An electronic calculator based on a freeCodeCamp project. 
-                              It was created using Javascript, jQuery, and HTML/SCSS. 
-                              I used flexbox for formating the keypad.
-                            </p>
-                      		</div>
-                      	</div> <!-- end flip-container -->
-                      </div>
-                        <h3 class="medium-text text-uppercase text-center">Calculator</h3>
-                        <p class="text-center tiny-text">
-                          <a class="project-link" href="http://carltonhain.com/fcc-calculator/" target="_blank" rel="noopener">
-                            Demo
-                          </a> 
-                            | 
-                          <a class="project-link" href="https://github.com/crhwebdev/fcc-calculator" target="_blank" rel="noopener">
-                            Source
-                          </a>
-                        </p>
-                    </div>
-                  </div> <!--end of row 1 -->
-
-                  <div class="row u-small-bottom-margin"> <!-- featured Row 2 -->
-                    <!-- Pmodoro Project -->
-                    <div class="col-md-4 feature-item">
-                      <div class="flip-container">
-  	                    <div class="flipper">
-                      		<div class="front">
-                            <img 
-                              src="./images/pomodoro.jpg" 
-                              class="img-responsive img-shadowed is-flipcard"
-                              alt="Image of pomodoro timer application"
-                            >
-                      		</div>
-                      		<div class="back img-shadowed is-flipcard notecard-theme">
-                      			<p>
-                              This useful pomodoro clock was created as part of freeCodeCamp’s front end development certificate program. 
-                              It was created using HTML, SCSS, JavaScript, and jQuery.
-                            </p>
-                      		</div>
-                      	</div> <!-- end flip-container -->
-                      </div>
-                        <h3 class="medium-text text-uppercase text-center">Pomodoro</h3>
-                        <p class="text-center tiny-text">
-                          <a class="project-link" href="http://carltonhain.com/fcc-pomodoro/" target="_blank" rel="noopener">
-                            Demo
-                          </a> 
-                            | 
-                          <a class="project-link" href="https://github.com/crhwebdev/fcc-pomodoro" target="_blank" rel="noopener">
-                            Source
-                          </a>
-                        </p>
-                    </div>
-                  </div> <!--end of row 2-->
-
-                </div> <!--end of featured section -->
-
-              </div> <!--end of portfolio section -->
-
-              <!--About Section -->
-              <div id="about" class="body-text u-large-bottom-margin">
-                  <div class="section-heading u-medium-bottom-margin">
-                      <h2 class="medium-text text-uppercase">About</h2>
-                  </div>                                        
-                <div class="row">
-                  <div class="col-md-12">
-                    <p>
-                      <img 
-                        src="./images/profile_small_2.jpg" 
-                        class="img-responsive img-shadowed"
-                        alt="Picture of Carl Hain"
-                      >
-                      Hi, my name is Carl Hain and I am a web developer living in the Chicago suburbs. 
-                      After many years working in marketing research and competitive intelligence for a large commercial insurance company, 
-                      I decided to switch careers. I have always been passionate about technology and the web, and I have been a hobbyist programmer 
-                      for many years; so the choice was obvious. I am especially excited by the MERN stack, which includes MongoDB, Express, React, and Node. 
-                      I am also passionate about the new education opportunities that the web brings and would not have been able to do this without the help
-                       of Codecademy, Udacity, FreeCodeCamp, and so many other resources.
-                    </p>
-                  </div>
-                  <!--<div class="col-md-4"></div> -->
+        <div class="row u-small-bottom-margin">
+          <!--Featured Row 1 -->
+          <!-- Vote Project -->
+          <div class="col-md-4 feature-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front is-flipcard">
+                  <img
+                    src="./images/vote-thumb.jpg"
+                    class="flip-img"
+                    alt="Image of voteing application"
+                  />
                 </div>
-              </div> <!--end of about section-->
-            
-
-              <!--Contact Section -->
-              <div id="contact" class="u-large-bottom-margin">
-                <div class="section-heading u-medium-bottom-margin">
-                    <h2 class="medium-text text-uppercase">Contact</h2>
+                <div class="back img-shadowed is-flipcard notecard-theme">
+                  <p>
+                    This polling application was created with Node.js, Express,
+                    and MongoDB for a freeCodeCamp project. It allows users to
+                    create and vote on opinion polls.
+                  </p>
                 </div>
+              </div>
+              <!-- end flip-container -->
+            </div>
+            <h3 class="medium-text text-uppercase text-center">Vote</h3>
+            <p class="text-center tiny-text">
+              <a
+                class="project-link"
+                href="https://crh-voting-app.herokuapp.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                Demo
+              </a>
+              |
+              <a
+                class="project-link"
+                href="https://github.com/crhwebdev/fcc-voting-app"
+                target="_blank"
+                rel="noopener"
+              >
+                Source
+              </a>
+            </p>
+          </div>
+          <!-- Simon Project -->
+          <div class="col-md-4 feature-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front is-flipcard">
+                  <img
+                    src="./images/simon.jpg"
+                    class="flip-img"
+                    alt="Image of simon application"
+                  />
+                </div>
+                <div class="back img-shadowed is-flipcard notecard-theme">
+                  <p>
+                    A classic game from the late 1970s reimagined for the Web
+                    using React.
+                  </p>
+                </div>
+              </div>
+              <!-- end flip-container -->
+            </div>
+            <h3 class="medium-text text-uppercase text-center">Simon</h3>
+            <p class="text-center tiny-text">
+              <a
+                class="project-link"
+                href="http://carltonhain.com/fcc-simon/"
+                target="_blank"
+                rel="noopener"
+              >
+                Demo
+              </a>
+              |
+              <a
+                class="project-link"
+                href="https://github.com/crhwebdev/fcc-simon"
+                target="_blank"
+                rel="noopener"
+              >
+                Source
+              </a>
+            </p>
+          </div>
+          <!-- Calculator Project -->
+          <div class="col-md-4 feature-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front is-flipcard">
+                  <img
+                    src="./images/calculator.jpg"
+                    class="flip-img"
+                    alt="Image of calculator application"
+                  />
+                </div>
+                <div class="back img-shadowed is-flipcard notecard-theme">
+                  <p>
+                    An electronic calculator based on a freeCodeCamp project. It
+                    was created using Javascript, jQuery, and HTML/SCSS. I used
+                    flexbox for formating the keypad.
+                  </p>
+                </div>
+              </div>
+              <!-- end flip-container -->
+            </div>
+            <h3 class="medium-text text-uppercase text-center">Calculator</h3>
+            <p class="text-center tiny-text">
+              <a
+                class="project-link"
+                href="http://carltonhain.com/fcc-calculator/"
+                target="_blank"
+                rel="noopener"
+              >
+                Demo
+              </a>
+              |
+              <a
+                class="project-link"
+                href="https://github.com/crhwebdev/fcc-calculator"
+                target="_blank"
+                rel="noopener"
+              >
+                Source
+              </a>
+            </p>
+          </div>
+        </div>
+        <!--end of row 1 -->
 
-                <form id="contact-form" class="body-text">
-                  <label for="contact-name">Name</label>
-                  <input type="text" id="contact-name" placeholder="Name" required=''>
-                  <label for="contact-email">Email Address</label>
-                  <input type="email" id="contact-email" placeholder="Email Address" required=''>
-                  <label for="contact-phone">Phone Number</label>
-                  <input type="tel" id="contact-phone" placeholder="Phone Number (optional)">
-                  <label for="contact-message">Message</label>
-                  <textarea id="contact-message" rows="5" placeholder="Message" required=''></textarea>
-                  <button id='contact-submit' class="basic-btn">Send</button>
-                </form>
+        <div class="row u-small-bottom-margin">
+          <!-- featured Row 2 -->
+          <!-- Pmodoro Project -->
+          <div class="col-md-4 feature-item">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front is-flipcard">
+                  <img
+                    src="./images/pomodoro.jpg"
+                    class="flip-img"
+                    alt="Image of pomodoro timer application"
+                  />
+                </div>
+                <div class="back img-shadowed is-flipcard notecard-theme">
+                  <p>
+                    This useful pomodoro clock was created as part of
+                    freeCodeCamp’s front end development certificate program. It
+                    was created using HTML, SCSS, JavaScript, and jQuery.
+                  </p>
+                </div>
+              </div>
+              <!-- end flip-container -->
+            </div>
+            <h3 class="medium-text text-uppercase text-center">Pomodoro</h3>
+            <p class="text-center tiny-text">
+              <a
+                class="project-link"
+                href="http://carltonhain.com/fcc-pomodoro/"
+                target="_blank"
+                rel="noopener"
+              >
+                Demo
+              </a>
+              |
+              <a
+                class="project-link"
+                href="https://github.com/crhwebdev/fcc-pomodoro"
+                target="_blank"
+                rel="noopener"
+              >
+                Source
+              </a>
+            </p>
+          </div>
+        </div>
+        <!--end of row 2-->
+      </div>
+      <!--end of featured section -->
+    </div>
+    <!--end of portfolio section -->
 
-              </div> <!--end of contact div-->
+    <!--About Section -->
+    <div id="about" class="body-text u-large-bottom-margin">
+      <div class="section-heading u-medium-bottom-margin">
+        <h2 class="medium-text text-uppercase">About</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            <img
+              src="./images/profile_small_2.jpg"
+              class="img-responsive img-shadowed"
+              alt="Picture of Carl Hain"
+            />
+            Hi, my name is Carl Hain and I am a web developer living in the
+            Chicago suburbs. After many years working in marketing research and
+            competitive intelligence for a large commercial insurance company, I
+            decided to switch careers. I have always been passionate about
+            technology and the web, and I have been a hobbyist programmer for
+            many years; so the choice was obvious. I am especially excited by
+            the MERN stack, which includes MongoDB, Express, React, and Node. I
+            am also passionate about the new education opportunities that the
+            web brings and would not have been able to do this without the help
+            of Codecademy, Udacity, FreeCodeCamp, and so many other resources.
+          </p>
+        </div>
+        <!--<div class="col-md-4"></div> -->
+      </div>
+    </div>
+    <!--end of about section-->
 
-              <!-- <div class="row bar"></div> -->
+    <!--Contact Section -->
+    <div id="contact" class="u-large-bottom-margin">
+      <div class="section-heading u-medium-bottom-margin">
+        <h2 class="medium-text text-uppercase">Contact</h2>
+      </div>
 
-              <footer class="row">
-                <p class="col-md-4">Carl Hain &copy 2017-2018. All Rights Reserved.</p>
-              </footer>
-        <!-- </div>  end of contents -->
-      <!-- </div> end of container -->
-      <script type="text/javascript" src="js/portfolioUI.js"></script>
-      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-      <script type="text/javascript">
-          (function(){
-            emailjs.init("user_alZeMZFKfFrbrbMwU7OWR");
-          })();
-      </script>        
+      <form id="contact-form" class="body-text">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" placeholder="Name" required="" />
+        <label for="contact-email">Email Address</label>
+        <input
+          type="email"
+          id="contact-email"
+          placeholder="Email Address"
+          required=""
+        />
+        <label for="contact-phone">Phone Number</label>
+        <input
+          type="tel"
+          id="contact-phone"
+          placeholder="Phone Number (optional)"
+        />
+        <label for="contact-message">Message</label>
+        <textarea
+          id="contact-message"
+          rows="5"
+          placeholder="Message"
+          required=""
+        ></textarea>
+        <button id="contact-submit" class="basic-btn">Send</button>
+      </form>
+    </div>
+    <!--end of contact div-->
 
-    </body>
+    <!-- <div class="row bar"></div> -->
 
+    <footer class="row">
+      <p class="col-md-4">Carl Hain &copy 2017-2018. All Rights Reserved.</p>
+    </footer>
+    <!-- </div>  end of contents -->
+    <!-- </div> end of container -->
+    <script type="text/javascript" src="js/portfolioUI.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init('user_alZeMZFKfFrbrbMwU7OWR');
+      })();
+    </script>
+  </body>
 </html>
