@@ -12,7 +12,9 @@ $('document').ready(function() {
       portfolioButton = $('#btn-portfolio'),
       aboutButton = $('#btn-about'),
       contactButton = $('#btn-contact');
-    safeAnimationFrame(flipCardsBackOver);
+    // since flipcards are disabled for now, we do not have to flip them over
+    // on scroll - renable this if using flip cards again
+    // safeAnimationFrame(flipCardsBackOver);
     //At projects
     if (currentPosition < aboutOffset) {
       if (!portfolioButton.hasClass('is-active')) {
@@ -85,17 +87,18 @@ $('document').ready(function() {
     e.preventDefault();
   });
   //handler for flip card clicks
-  $('.flip-container').on('click', function(e) {
-    var card = $(this).children('.flipper');
-    if (clientIsIE) {
-      card
-        .children('div.back')
-        .toggleClass('is-front'); /*hack for IE flip cards*/
-    } else {
-      card.toggleClass('is-fliped');
-      setCardBackHeightToScroll(card);
-    }
-  });
+  // disabled for now, because chrome does not like this any more
+  // $('.flip-container').on('click', function(e) {
+  //   var card = $(this).children('.flipper');
+  //   if (clientIsIE) {
+  //     card
+  //       .children('div.back')
+  //       .toggleClass('is-front'); /*hack for IE flip cards*/
+  //   } else {
+  //     card.toggleClass('is-fliped');
+  //     setCardBackHeightToScroll(card);
+  //   }
+  // });
   //handler for contact form submission
   $('#contact-submit').on('click', function(e) {
     var validate = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi;
