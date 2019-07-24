@@ -267,7 +267,7 @@ footer {
 
 /* flip speed goes here */
 .flipper {
-  transition: 0.6s;
+  transition: 0.4s;
   transform-style: preserve-3d; }
 
 /* hide back of pane during swap */
@@ -276,7 +276,7 @@ footer {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   /*transition: height 0.6s ease;*/
-  transition: 0.6s;
+  transition: 0.4s;
   z-index: 5;
   position: absolute;
   top: 0;
@@ -297,17 +297,9 @@ footer {
   transform: rotateY(180deg);
   overflow: hidden; }
 
-.is-flipcard {
-  cursor: pointer; }
-
-.is-flipcard:hover {
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.6);
-  /* box-shadow: 4px 4px 20px 2px black;
-  -webkit-box-shadow: 4px 4px 20px 2px black; */
-  transition: box-shadow 0.25s; }
-
 .is-front {
   backface-visibility: visible;
+  -webkit-backface-visibility: visible;
   transform: rotateY(0deg);
   z-index: 10;
   overflow: auto; }
