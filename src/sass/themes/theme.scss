@@ -1,61 +1,66 @@
 /*this file defines font type, sizes, colors; backgrounds; and button styling*/
+$color-primary: #35516e;
+$color-notecard: #fafbcf;
 
+$color-white: white;
+$color-black: #0b1c2c;
+
+$color-light-gray: #b9c1c9;
+$color-gray: #677079;
 /*font styles*/
 
 /*background styles*/
-.primary-theme{
+.primary-theme {
   background-color: $color-white;
   /*background-color: #DCE5EE;*/
 }
 
-.navbar-theme{
-  background-color: $color-primary;  
+.navbar-theme {
+  background-color: $color-primary;
 }
 
-.header-theme{
+.header-theme {
   background-color: $color-white;
 }
 
-.notecard-theme{
+.notecard-theme {
   border: 1px solid $color-black;
   background-color: $color-notecard;
   /*background: -webkit-linear-gradient(top, #ffffff 15%,#F94545 16%,#ffffff 16%,#ffffff 25%,#85b2d3 26%,#ffffff 26%, #ffffff 35%,#85b2d3 36%,#ffffff 36%,#ffffff 45%,#85b2d3 46%,#ffffff 46%, #ffffff 55%,#85b2d3 56%,#ffffff 56%, #ffffff 65%,#85b2d3 66%,#ffffff 66%, #ffffff 75%,#85b2d3 76%,#ffffff 76%, #ffffff 85%,#85b2d3 86%,#ffffff 86%, #ffffff 95%,#85b2d3 96%,#ffffff 96%);
   background: linear-gradient(top, #ffffff 15%,#F94545 16%,#ffffff 16%,#ffffff 25%,#85b2d3 26%,#ffffff 26%, #ffffff 35%,#85b2d3 36%,#ffffff 36%,#ffffff 45%,#85b2d3 46%,#ffffff 46%, #ffffff 55%,#85b2d3 56%,#ffffff 56%, #ffffff 65%,#85b2d3 66%,#ffffff 66%, #ffffff 75%,#85b2d3 76%,#ffffff 76%, #ffffff 85%,#85b2d3 86%,#ffffff 86%, #ffffff 95%,#85b2d3 96%,#ffffff 96%);*/
 }
 
-.notecard-theme p{
-  margin-top: 1rem;  
+.notecard-theme p {
+  margin-top: 1rem;
   padding: 1rem;
 }
 
 /*button styles*/
 
-
 /*image styles*/
-.img-shadowed{
-  border: 2px solid $color-black;  
-  box-shadow: 0 .5rem 3rem rgba($color-black, .4);
-  border-radius: .5rem;
+.img-shadowed {
+  border: 2px solid $color-black;
+  box-shadow: 0 0.5rem 3rem rgba($color-black, 0.4);
+  border-radius: 0.5rem;
 }
-
 
 /*other component styles*/
 .bar {
-    background-color: $color-light-gray;
-    height: .3rem;
-    margin-top: 0.75rem;
-    margin-bottom: 1.5rem;
+  background-color: $color-light-gray;
+  height: 0.3rem;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
 }
-.top-bar{
+.top-bar {
   margin-top: 5rem;
 }
 .project-link {
-    text-decoration: none;
-    font-weight: 300;
-    color: $color-gray;/*#747704;*/
+  text-decoration: none;
+  font-weight: 300;
+  color: $color-gray; /*#747704;*/
 }
 .project-link:hover {
-    text-decoration: none;
-    font-weight: 300;
-    color: $color-black;
+  text-decoration: none;
+  font-weight: 300;
+  color: $color-black;
 }
